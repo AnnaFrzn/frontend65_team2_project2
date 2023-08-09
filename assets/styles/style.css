@@ -1,0 +1,364 @@
+@charset "UTF-8";
+/*------- colors  ------*/
+/* ---- mixins -----*/ /*----- typo mixins -----*/ /*--------- base -------*/
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 4.1vw;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+}
+
+/*-----  typo    -----*/
+/*-    Логика классов    
+    typo-Тип шрифта-размер, 
+например,
+typo-Title-60 - значит, что шрифт SeoulHangang и размер 60px, жирность обычная (400)
+
+.typo-subtitle-bold-18 
+шрифт Post No Bills Colombo, размер 18, жирный (600) 
+
+для параграфов body - .typo-body-16 (это тоже Post No Bills Colombo)--*/
+.typo-Title-60 {
+  font-family: "SeoulHangang", sans-serif;
+  margin: 0;
+  font-size: 60px;
+  color: #9FDB3D;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+}
+
+.typo-Title-42 {
+  font-family: "SeoulHangang", sans-serif;
+  margin: 0;
+  font-size: 42px;
+  color: #09035D;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+}
+
+.typo-Title-36 {
+  font-family: "SeoulHangang", sans-serif;
+  margin: 0;
+  font-size: 36px;
+  color: #09035D;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+}
+
+.typo-Title-30 {
+  font-family: "SeoulHangang", sans-serif;
+  margin: 0;
+  font-size: 30px;
+  color: #09035D;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+}
+
+.typo-Title-28 {
+  font-family: "SeoulHangang", sans-serif;
+  margin: 0;
+  font-size: 28px;
+  color: #09035D;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+}
+
+.typo-subtitle-24 {
+  font-family: "Helvetica", sans-serif;
+  font-size: 24px;
+  color: #8491A0;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.typo-subtitle-20 {
+  font-family: "Helvetica", sans-serif;
+  font-size: 20px;
+  color: #8491A0;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.typo-subtitle-bold-18 {
+  font-family: "Helvetica", sans-serif;
+  font-size: 18px;
+  color: #8491A0;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.typo-subtitle-bold-16 {
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  color: #8491A0;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.typo-body-14 {
+  font-family: "Helvetica", sans-serif;
+  font-size: 14px;
+  color: #8491A0;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.typo-body-16 {
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  color: #8491A0;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.typo-body-bold-16 {
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  color: #8491A0;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+}
+
+.typo-body-18 {
+  font-family: "Helvetica", sans-serif;
+  font-size: 18px;
+  color: #8491A0;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.typo-btn-16 {
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+/*                                     */
+/* ------- THE PROJECT BEGINNING  ---- */
+/*                                     */
+/*------- HEADER  ---------*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1.25rem;
+  background-color: black;
+}
+
+.header__logo {
+  width: 4.9rem;
+  height: 1.5rem;
+}
+
+/*------ MENU  -------*/
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 1.875rem;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #8491A0;
+  position: absolute;
+  right: 1.25rem;
+  height: 3px;
+  width: 1.125rem;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -5px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 5px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: bisque;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+.menu > li:hover {
+  background-color: #5221E6;
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 3.125rem;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Helvetica", sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #181823;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: #fff;
+    background-color: black;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #5B6876;
+  }
+}
+/*------ BLOCK 0 - INTRO    start  -------*/
+.intro {
+  display: flex;
+  flex-direction: column;
+  height: 40.75rem;
+}
+.intro__bgimg {
+  height: 18rem;
+  background-image: url(../images/intro_big_pic.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.intro__title {
+  margin: 3rem 1.25rem 0rem 1.25rem;
+}
+.intro__h1--grey {
+  color: rgba(255, 255, 255, 0.5);
+}
+.intro__message {
+  margin: 1rem 1.25rem 3rem 1.25rem;
+}
+.intro__text--white {
+  color: #fff;
+}
+
+/*------ BLOCK 0 - INTRO    end  -------*/
+/*------ BLOCK 1 - WORK EXPERIENCE   start  -------*/
+.workexp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 74.5rem;
+  background-color: #181823;
+}
+.workexp__h2-color {
+  color: #8491A0;
+  margin-bottom: 8px;
+}
+.workexp__title {
+  margin: 3rem 1.25rem 0 1.25rem;
+}
+.workexp--label-grey {
+  color: #8491A0;
+}
+.workexp__h3--greenAccent {
+  color: #3CC74E;
+}
+.workexp__h3--blueAccent {
+  color: #609BFF;
+}
+.workexp__h3--pinkAccent {
+  color: #E95D90;
+}
+.workexp__description--grey {
+  margin-top: 1rem;
+  color: #8491A0;
+}
+.workexp__card {
+  margin: 3rem 1.25rem 0.5rem 1.25rem;
+  padding-right: 30px;
+}
+
+/*------ BLOCK 1 - WORK EXPERIENCE    end  -------*//*# sourceMappingURL=style.css.map */

@@ -1,0 +1,42 @@
+/*----- typo mixins -----*/
+$font-title: 'SeoulHangang', sans-serif;
+$font-body: 'Helvetica', sans-serif;
+$fontColor: black;
+
+
+@mixin typo-body($size, $fontColor) {
+    font-family: $font-body;
+    font-size: $size;
+    color: $fontColor;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+@mixin typo-body-bold($size, $fontColor) {
+    font-family: $font-body;
+    font-size: $size;
+    color: $fontColor;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+@mixin typo-h($size, $fontColor) {
+    font-family: $font-title;
+    margin: 0;
+    font-size: $size;
+    color: $fontColor;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px;
+}
+
+@mixin typo-btn($size, $fontColor) {
+    font-family: $font-body;
+    margin: 0;
+    font-size: $size;
+    color: $fontColor;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

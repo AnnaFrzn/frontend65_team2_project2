@@ -1,0 +1,33 @@
+/* sen-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/sen-v7-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* sen-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/sen-v7-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  @font-face {
+    font-family: 'SeoulHangang';
+    src:url('../fonts/SeoulHangang-CEB.ttf.woff') format('woff'),
+        url('../fonts/SeoulHangang-CEB.ttf.svg#SeoulHangang-CEB') format('svg'),
+        url('../fonts/SeoulHangang-CEB.ttf.eot'),
+        url('../fonts/SeoulHangang-CEB.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'postnobillscolombo';
+  src:url('../fonts/postnobillscolombo-regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
