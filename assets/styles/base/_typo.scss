@@ -1,8 +1,6 @@
 
 /*-----  typo    -----*/
-$font-title: 'SeoulHangang', sans-serif;
-$font-body: 'Helvetica', sans-serif;
-$fontColor: black;
+
 
 /*-    Логика классов    
     typo-Тип шрифта-размер, 
@@ -31,38 +29,38 @@ typo-Title-60 - значит, что шрифт SeoulHangang и размер 60p
 }
 
 .typo-subtitle-24 {
-    @include typo-body(24px, $color-LightGrey);
+    @include typo-body(24px, $color-black);
 }
 .typo-subtitle-20 {
-    @include typo-body(20px, $color-LightGrey);
+    @include typo-body(20px, $color-black);
 }
 .typo-subtitle-bold-18 {
-    @include typo-body-bold(18px, $color-LightGrey);
+    @include typo-body-bold(18px, $color-black);
 }
 .typo-subtitle-bold-16 {
-    @include typo-body-bold(16px, $color-LightGrey);
+    @include typo-body-bold(16px, $color-black);
 }
 
 
 .typo-body-14 {
-    @include typo-body(14px, $color-LightGrey);
+    @include typo-body(14px, $color-black);
     margin: 0;
 }
 .typo-body-16 {
-    @include typo-body(16px, $color-LightGrey);
+    @include typo-body(16px, $color-black);
     margin: 0;
 }
 .typo-body-bold-16 {
-    @include typo-body-bold(16px, $color-LightGrey);
+    @include typo-body-bold(16px, $color-black);
     margin: 0;
 }
 .typo-body-18 {
-    @include typo-body(18px, $color-LightGrey);
+    @include typo-body(18px, $color-black);
     margin: 0;
 }
 
 .typo-btn-16 {
-    @include typo-body(16px, $color-Text);
+    @include typo-body(16px, $color-wight);
     margin: 0;
 }
 

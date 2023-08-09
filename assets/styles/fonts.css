@@ -1,19 +1,4 @@
-/* sen-regular - latin */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Sen';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/sen-v7-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* sen-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Sen';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/sen-v7-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+/* SeoulHangang - Title, headings */
 
   @font-face {
     font-family: 'SeoulHangang';
@@ -25,9 +10,22 @@
     font-style: normal;
 }
 
+/* Post No Bills Colombo Regular - Subtitles, paragraph */
+
 @font-face {
-  font-family: 'postnobillscolombo';
-  src:url('../fonts/postnobillscolombo-regular.ttf') format('ttf');
-  font-weight: normal;
+  font-family: 'Post No Bills Colombo Regular';
   font-style: normal;
-}
+  font-weight: normal;
+  src: local('Post No Bills Colombo Regular'), url('../fonts/PostNoBillsColombo-Regular.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Post No Bills Colombo Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Post No Bills Colombo Bold'), url('../fonts/PostNoBillsColombo-Bold.woff') format('woff');
+  }
+  
+
+  
