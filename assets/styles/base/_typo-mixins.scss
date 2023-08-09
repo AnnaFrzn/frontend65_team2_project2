@@ -10,7 +10,7 @@ $fontColor: black;
     font-size: $size;
     color: $fontColor;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: normal;
 }
 @mixin typo-body-bold($size, $fontColor) {
