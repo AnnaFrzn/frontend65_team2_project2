@@ -85,7 +85,7 @@ typo-Title-60 - значит, что шрифт SeoulHangang и размер 60p
   font-size: 24px;
   color: #0F0F10;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -94,25 +94,23 @@ typo-Title-60 - значит, что шрифт SeoulHangang и размер 60p
   font-size: 20px;
   color: #0F0F10;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
 }
 
 .typo-subtitle-bold-18 {
-  font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
+  font-family: "Post No Bills Colombo Bold", "Helvetica", sans-serif;
   font-size: 18px;
   color: #0F0F10;
   font-style: normal;
-  font-weight: 600;
   line-height: normal;
 }
 
 .typo-subtitle-bold-16 {
-  font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
+  font-family: "Post No Bills Colombo Bold", "Helvetica", sans-serif;
   font-size: 16px;
   color: #0F0F10;
   font-style: normal;
-  font-weight: 600;
   line-height: normal;
 }
 
@@ -121,7 +119,7 @@ typo-Title-60 - значит, что шрифт SeoulHangang и размер 60p
   font-size: 14px;
   color: #0F0F10;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
   margin: 0;
 }
@@ -131,17 +129,16 @@ typo-Title-60 - значит, что шрифт SeoulHangang и размер 60p
   font-size: 16px;
   color: #0F0F10;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
   margin: 0;
 }
 
 .typo-body-bold-16 {
-  font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
+  font-family: "Post No Bills Colombo Bold", "Helvetica", sans-serif;
   font-size: 16px;
   color: #0F0F10;
   font-style: normal;
-  font-weight: 600;
   line-height: normal;
   margin: 0;
 }
@@ -151,7 +148,7 @@ typo-Title-60 - значит, что шрифт SeoulHangang и размер 60p
   font-size: 18px;
   color: #0F0F10;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
   margin: 0;
 }
@@ -161,7 +158,7 @@ typo-Title-60 - значит, что шрифт SeoulHangang и размер 60p
   font-size: 16px;
   color: #FFFFFF;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
   margin: 0;
 }

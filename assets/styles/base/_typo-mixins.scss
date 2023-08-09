@@ -1,6 +1,7 @@
 /*----- typo mixins -----*/
 $font-title: 'SeoulHangang', sans-serif;
 $font-body: 'Post No Bills Colombo Regular', 'Helvetica', sans-serif;
+$font-body-bold:'Post No Bills Colombo Bold', 'Helvetica', sans-serif;
 $fontColor: black;
 
 
@@ -9,15 +10,14 @@ $fontColor: black;
     font-size: $size;
     color: $fontColor;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
 }
 @mixin typo-body-bold($size, $fontColor) {
-    font-family: $font-body;
+    font-family: $font-body-bold;
     font-size: $size;
     color: $fontColor;
     font-style: normal;
-    font-weight: 600;
     line-height: normal;
 }
 
