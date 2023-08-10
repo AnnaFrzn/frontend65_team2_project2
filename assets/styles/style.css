@@ -165,4 +165,136 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
 
 /*                                     */
 /* ------- THE PROJECT BEGINNING  ---- */
-/*                                     *//*# sourceMappingURL=style.css.map */
+/*                                     */
+/*------- HEADER  ---------*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #EDEBFC;
+}
+
+.header__logo {
+  width: 112px;
+  height: 32px;
+}
+
+/*------ MENU  -------*/
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > a {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 1.875rem;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #09035D;
+  position: absolute;
+  right: 1.25rem;
+  height: 3px;
+  width: 1.125rem;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -5px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 5px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: #EDEBFC;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+.menu > a:hover {
+  color: #09035D;
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 3.125rem;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(120, 113, 222, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+  #menu-toggle ~ .menu a {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    text-decoration: none;
+    font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  #menu-toggle:checked ~ .menu a {
+    border: none;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > a {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: #FFFFFF;
+    background-color: none;
+  }
+  .menu > a:not(:last-child) {
+    border-bottom: none;
+  }
+}/*# sourceMappingURL=style.css.map */
