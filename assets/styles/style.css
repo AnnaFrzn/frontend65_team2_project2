@@ -180,17 +180,31 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
   height: 32px;
 }
 
+.header__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*------ MENU  -------*/
 .menu {
   display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  flex-wrap: nowrap;
 }
 
 .menu > a {
   margin: 0 1rem;
   overflow: hidden;
+  text-decoration: none;
+  font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
+  font-size: 14px;
+  color: #09035D;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .menu-button-container {
@@ -243,10 +257,10 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
 }
 
 .menu > a:hover {
-  color: #09035D;
+  color: #7871DE;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1020px) {
   .menu-button-container {
     display: flex;
     justify-content: space-between;
@@ -296,5 +310,8 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
   }
   .menu > a:not(:last-child) {
     border-bottom: none;
+  }
+  .menu > a:hover {
+    color: #09035D;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -3,11 +3,16 @@
     @include spaceBetween;
     padding: 20px;
     background-color: $color-violet;
+    
 }
 
 .header__logo {
     width: 112px;
     height: 32px;
+}
+
+.header__social {
+    @include center;
 }
 
 /*------ MENU  -------*/
@@ -16,11 +21,15 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    flex-wrap: nowrap;
+
 }
 
 .menu>a {
     margin: 0 1rem;
     overflow: hidden;
+    text-decoration: none;
+    @include typo-body(14px, $color-blue);
 }
 
 .menu-button-container {
@@ -73,10 +82,10 @@
 }
 
 .menu>a:hover {
-    color: $color-blue;
+    color: $color-darkviolet;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1020px) {
     .menu-button-container {
         display: flex;
         justify-content: space-between;
@@ -127,6 +136,8 @@
     .menu>a:not(:last-child) {
         border-bottom: none;
     }
-
+    .menu>a:hover {
+        color: $color-blue;
+    }
     
 }
