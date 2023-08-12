@@ -1,5 +1,8 @@
 @charset "UTF-8";
-/*------- colors  ------*/ /* ---- mixins -----*/ /*----- typo mixins -----*/ /*--------- base -------*/
+/*------- colors  ------*/
+/* ---- mixins -----*/
+/*----- typo mixins -----*/
+/*--------- base -------*/
 * {
   box-sizing: border-box;
 }
@@ -382,4 +385,71 @@ input:placeholder-shown {
   border-radius: 4px;
   border: 2px solid #09035D;
   box-shadow: 4px 4px 20px 0px rgba(9, 3, 93, 0.1);
+}
+
+.intro {
+  background-color: #EDEBFC;
+}
+.intro__title {
+  margin: 0 1.25rem 0 1.25rem;
+}
+.intro__item-img {
+  width: 20rem;
+  height: 23.75rem;
+  margin: 2.5rem 0 1.25rem 0;
+}
+.intro__h1 {
+  color: #7871DE;
+}
+.intro__typo-body-18 {
+  color: #7871DE;
+  padding: 0.625rem 0 1.25rem 0;
+}
+.intro__btn {
+  background-color: #09035D;
+  width: 20rem;
+  height: 4.375rem;
+  padding: 0.75rem 1.875rem 0.625rem 1.875rem;
+  margin-bottom: 3.75rem;
+  border-radius: 4px;
+  box-shadow: 4px 4px 20px 0px rgba(9, 3, 93, 0.1);
+}
+.intro__btn__typo-btn-16 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forwhat {
+  background-color: #7871DE;
+}
+.forwhat__title {
+  margin: 0 1.25rem 0 1.25rem;
+  padding: 3.75rem 0 3.75rem 0;
+}
+.forwhat__typo-title-30 {
+  color: #FFFFFF;
+  margin-bottom: 2.5rem;
+}
+.forwhat__h3 {
+  color: #9FDB3D;
+  font-size: 20px;
+  margin-top: 1.25rem;
+}
+.forwhat__typo-body-16 {
+  color: #FFFFFF;
+  width: 20rem;
+  margin-top: 0.625rem;
+}
+.forwhat__p {
+  color: #FFFFFF;
+  width: 20rem;
+  margin-top: 0.625rem;
+}
+
+.trajectory__title {
+  margin: 0 1.25rem 0 1.25rem;
+}
+.trajectory__typo-title-60 {
+  margin: 1.25rem 0 0.625rem 0;
 }/*# sourceMappingURL=style.css.map */
