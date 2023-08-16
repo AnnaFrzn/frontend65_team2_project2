@@ -54,7 +54,6 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
 .typo-info {
     @include typo-body;
     font-size: 1rem;
-    color: $color-black;
 }
 
 .typo-info-bold {
