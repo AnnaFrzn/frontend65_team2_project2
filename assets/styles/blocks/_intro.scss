@@ -1,0 +1,35 @@
+.intro{
+    background-color: $color-violet;
+
+    &__title{
+    margin: 0 1.25rem 0 1.25rem;
+
+    }
+    &__item-img{
+        width: 20rem;
+        height: 23.75rem;
+        margin: 2.5rem 0 1.25rem 0;
+    }
+    &__h1{
+        color: $color-darkviolet;
+    }
+    &__typo-body-18{
+        color: $color-darkviolet;
+        padding: 0.625rem 0 1.25rem 0;
+    }
+    &__btn{
+        background-color: $color-blue;
+        width: 20rem;
+        height: 4.375rem;
+        padding: 0.75rem 1.875rem 0.625rem 1.875rem;
+        margin-bottom: 3.75rem;
+        border-radius: 4px;
+box-shadow: 4px 4px 20px 0px rgba(9, 3, 93, 0.10);
+
+    &__typo-btn-16{
+        @include center; 
+    }
+    }
+
+
+}

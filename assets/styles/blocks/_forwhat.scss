@@ -1,0 +1,27 @@
+.forwhat{
+    background-color: $color-darkviolet;
+    &__title{
+        margin: 0 1.25rem 0 1.25rem;
+        padding: 3.75rem 0 3.75rem 0;
+        }
+        &__typo-title-30{
+            color: $color-wight;
+            margin-bottom: 2.5rem;
+        }
+        &__h3{
+            color: $color-green;
+            font-size: 20px;
+            margin-top: 1.25rem;
+        }
+        &__typo-body-16{
+            color: $color-wight;
+            width: 20rem;
+            margin-top: 0.625rem;
+        }
+
+        &__p{
+            color: $color-wight;
+            width: 20rem;
+            margin-top: 0.625rem;
+        }
+}
