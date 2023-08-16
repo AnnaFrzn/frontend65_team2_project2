@@ -1,4 +1,3 @@
-
 /*-----  typo    -----*/
 
 
@@ -12,55 +11,176 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
 
 для параграфов body - .typo-body-16 (это тоже Post No Bills Colombo)--*/
 
-.typo-title-60 {
-    @include typo-h(60px, $color-green);
+.typo-nav {
+    @include typo-body;
+    font-size: 1.125rem;
+    color: $color-wight;
 }
+
+.typo-title {
+    @include typo-h;
+    font-size: 2.25rem;
+    color: $color-blue;
+}
+
+.typo-comment {
+    @include typo-body;
+    font-size: 1.125rem;
+}
+
+.typo-textbtn {
+    @include typo-body;
+    font-size: 1rem;
+    color: $color-wight;
+}
+
+.typo-agree-answer {
+    @include typo-body;
+    font-size: 0.875rem;
+}
+
+.typo-countstat {
+    @include typo-h;
+    font-size: 1.75rem;
+    color: $color-blue;
+}
+
+.typo-blockname {
+    @include typo-h;
+    font-size: 1.875rem;
+    color: $color-blue;
+}
+
+.typo-info {
+    @include typo-body;
+    font-size: 1rem;
+    color: $color-black;
+}
+
+.typo-info-bold {
+    @include typo-body-bold;
+    font-size: 1rem;
+}
+
+.typo-text-20px {
+    @include typo-body;
+    font-size: 1.25rem;
+}
+
+.typo-textadvant {
+    @include typo-body;
+    color: $color-blue;
+    font-size: 1.5rem;
+}
+
+.typo-countgreen {
+    @include typo-h;
+    color: $color-green;
+    font-size: 3.75rem;
+}
+
+@media screen and (min-width: 768px) {
+    .typo-title {
+        font-size: 2.625rem;
+    }
+
+    .typo-countstat {
+        font-size: 2rem;
+    }
+
+    .typo-blockname {
+        font-size: 2.25rem;
+    }
+
+    .typo-textgreen {
+        font-size: 1.5rem;
+    }
+
+    .typo-btn-agree {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .typo-nav {
+        font-size: 0.875rem;
+        color: $color-blue;
+    }
+
+    .typo-countstat {
+        font-size: 2.25rem;
+    }
+}
+
+/*typo-title-60 {
+    @include typo-h(3.75rem, $color-green);
+}
+
 .typo-title-42 {
-    @include typo-h(42px, $color-blue);
+    @include typo-h(2.625px, $color-blue);
 }
+
 .typo-title-36 {
-    @include typo-h(36px, $color-blue);
+    @include typo-h(2.25rem, $color-blue);
 }
+
 .typo-title-30 {
-    @include typo-h(30px, $color-blue);
+    @include typo-h(1.875rem, $color-blue);
 }
+
+.typo-title-32 {
+    @include typo-h(2rem, $color-black);
+}
+
 .typo-title-28 {
-    @include typo-h(28px, $color-blue);
+    @include typo-h(1.75rem, $color-blue);
 }
 
 .typo-subtitle-24 {
-    @include typo-body(24px, $color-blue);
-}   
+    @include typo-body(1.5rem, $color-blue);
+}
+
 .typo-subtitle-20 {
-    @include typo-body(20px, $color-green);
+    @include typo-body(1.25rem, $color-green);
 }
+
+.typo-text-20 {
+    @include typo-body(1.25rem, $color-blue);
+    margin: 0;
+    padding-bottom: 0.625rem;
+}
+
 .typo-subtitle-bold-18 {
-    @include typo-body-bold(18px, $color-darkviolet);
+    @include typo-body-bold(1.125rem, $color-darkviolet);
 }
+
 .typo-subtitle-bold-16 {
-    @include typo-body-bold(16px, $color-darkviolet);
+    @include typo-body-bold(1rem, $color-darkviolet);
+    margin: 0;
 }
 
 
 .typo-body-14 {
-    @include typo-body(14px, $color-black);
+    @include typo-body(0.875rem, $color-black);
     margin: 0;
 }
+
 .typo-body-16 {
-    @include typo-body(16px, $color-black);
+    @include typo-body(1rem, $color-black);
     margin: 0;
 }
+
 .typo-body-bold-16 {
-    @include typo-body-bold(16px, $color-black);
+    @include typo-body-bold(1rem, $color-black);
     margin: 0;
 }
+
 .typo-body-18 {
-    @include typo-body(18px, $color-black);
+    @include typo-body(1.125rem, $color-black);
     margin: 0;
 }
 
 .typo-btn-16 {
-    @include typo-body(16px, $color-wight);
+    @include typo-body(1rem, $color-wight);
     margin: 0;
-}
-
+}*/

@@ -1,42 +1,29 @@
 /*----- typo mixins -----*/
 $font-title: 'SeoulHangang', sans-serif;
 $font-body: 'Post No Bills Colombo Regular', 'Helvetica', sans-serif;
-$font-body-bold:'Post No Bills Colombo Bold', 'Helvetica', sans-serif;
+$font-body-bold: 'Post No Bills Colombo Bold', 'Helvetica', sans-serif;
 $fontColor: black;
 
 
-@mixin typo-body($size, $fontColor) {
+@mixin typo-body {
     font-family: $font-body;
-    font-size: $size;
-    color: $fontColor;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-}
-@mixin typo-body-bold($size, $fontColor) {
-    font-family: $font-body-bold;
-    font-size: $size;
-    color: $fontColor;
-    font-style: normal;
-    line-height: normal;
+    margin: 0;
 }
 
-@mixin typo-h($size, $fontColor) {
+@mixin typo-body-bold {
+    font-family: $font-body-bold;
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+}
+
+@mixin typo-h {
     font-family: $font-title;
     margin: 0;
-    font-size: $size;
-    color: $fontColor;
     font-style: normal;
     font-weight: 400;
-    line-height: 44px;
-}
-
-@mixin typo-btn($size, $fontColor) {
-    font-family: $font-body;
-    margin: 0;
-    font-size: $size;
-    color: $fontColor;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    line-height: 2.75rem;
 }

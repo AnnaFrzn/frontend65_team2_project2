@@ -3,7 +3,7 @@
     @include spaceBetween;
     padding: 20px;
     background-color: $color-violet;
-    
+
 }
 
 .header__logo {
@@ -130,14 +130,15 @@
         width: 100%;
         color: $color-wight;
         background-color: none;
-       
+
     }
 
     .menu>a:not(:last-child) {
         border-bottom: none;
     }
+
     .menu>a:hover {
         color: $color-blue;
     }
-    
+
 }

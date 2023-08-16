@@ -14,5 +14,16 @@ html {
 .main {
     @include center;
     flex-direction: column;
-    background-color: $bg-color;
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 2.1vw;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    html {
+        font-size: 0.83vw;
+    }
 }
