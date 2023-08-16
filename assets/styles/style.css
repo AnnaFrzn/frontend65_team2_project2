@@ -42,161 +42,218 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
 шрифт Post No Bills Colombo, размер 18, жирный (600) 
 
 для параграфов body - .typo-body-16 (это тоже Post No Bills Colombo)--*/
-.typo-title-60 {
+.typo-nav {
+  font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  font-size: 1.125rem;
+  color: #FFFFFF;
+}
+
+.typo-title {
   font-family: "SeoulHangang", sans-serif;
   margin: 0;
-  font-size: 3.75rem;
-  color: #9FDB3D;
   font-style: normal;
   font-weight: 400;
   line-height: 2.75rem;
+  font-size: 2.25rem;
+  color: #09035D;
+}
+
+.typo-comment {
+  font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.typo-textbtn {
+  font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+
+.typo-agree-answer {
+  font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.typo-countstat {
+  font-family: "SeoulHangang", sans-serif;
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.75rem;
+  font-size: 1.75rem;
+  color: #09035D;
+}
+
+.typo-blockname {
+  font-family: "SeoulHangang", sans-serif;
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.75rem;
+  font-size: 1.875rem;
+  color: #09035D;
+}
+
+.typo-info {
+  font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.typo-info-bold {
+  font-family: "Post No Bills Colombo Bold", "Helvetica", sans-serif;
+  font-style: normal;
+  line-height: normal;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.typo-text-20px {
+  font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.typo-textadvant {
+  font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  color: #09035D;
+  font-size: 1.5rem;
+}
+
+.typo-countgreen {
+  font-family: "SeoulHangang", sans-serif;
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.75rem;
+  color: #9FDB3D;
+  font-size: 3.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .typo-title {
+    font-size: 2.625rem;
+  }
+  .typo-countstat {
+    font-size: 2rem;
+  }
+  .typo-blockname {
+    font-size: 2.25rem;
+  }
+  .typo-textgreen {
+    font-size: 1.5rem;
+  }
+  .typo-btn-agree {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .typo-nav {
+    font-size: 0.875rem;
+    color: #09035D;
+  }
+  .typo-countstat {
+    font-size: 2.25rem;
+  }
+}
+/*typo-title-60 {
+    @include typo-h(3.75rem, $color-green);
 }
 
 .typo-title-42 {
-  font-family: "SeoulHangang", sans-serif;
-  margin: 0;
-  font-size: 2.625px;
-  color: #09035D;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2.75rem;
+    @include typo-h(2.625px, $color-blue);
 }
 
 .typo-title-36 {
-  font-family: "SeoulHangang", sans-serif;
-  margin: 0;
-  font-size: 2.25rem;
-  color: #09035D;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2.75rem;
+    @include typo-h(2.25rem, $color-blue);
 }
 
 .typo-title-30 {
-  font-family: "SeoulHangang", sans-serif;
-  margin: 0;
-  font-size: 1.875rem;
-  color: #09035D;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2.75rem;
+    @include typo-h(1.875rem, $color-blue);
 }
 
 .typo-title-32 {
-  font-family: "SeoulHangang", sans-serif;
-  margin: 0;
-  font-size: 2rem;
-  color: #0F0F10;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2.75rem;
+    @include typo-h(2rem, $color-black);
 }
 
 .typo-title-28 {
-  font-family: "SeoulHangang", sans-serif;
-  margin: 0;
-  font-size: 1.75rem;
-  color: #09035D;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2.75rem;
+    @include typo-h(1.75rem, $color-blue);
 }
 
 .typo-subtitle-24 {
-  font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
-  font-size: 1.5rem;
-  color: #09035D;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+    @include typo-body(1.5rem, $color-blue);
 }
 
 .typo-subtitle-20 {
-  font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
-  font-size: 1.25rem;
-  color: #9FDB3D;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+    @include typo-body(1.25rem, $color-green);
 }
 
 .typo-text-20 {
-  font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
-  font-size: 1.25rem;
-  color: #09035D;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin: 0;
-  padding-bottom: 0.625rem;
+    @include typo-body(1.25rem, $color-blue);
+    margin: 0;
+    padding-bottom: 0.625rem;
 }
 
 .typo-subtitle-bold-18 {
-  font-family: "Post No Bills Colombo Bold", "Helvetica", sans-serif;
-  font-size: 1.125rem;
-  color: #7871DE;
-  font-style: normal;
-  line-height: normal;
+    @include typo-body-bold(1.125rem, $color-darkviolet);
 }
 
 .typo-subtitle-bold-16 {
-  font-family: "Post No Bills Colombo Bold", "Helvetica", sans-serif;
-  font-size: 1rem;
-  color: #7871DE;
-  font-style: normal;
-  line-height: normal;
-  margin: 0;
+    @include typo-body-bold(1rem, $color-darkviolet);
+    margin: 0;
 }
 
+
 .typo-body-14 {
-  font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
-  font-size: 0.875rem;
-  color: #0F0F10;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin: 0;
+    @include typo-body(0.875rem, $color-black);
+    margin: 0;
 }
 
 .typo-body-16 {
-  font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
-  font-size: 1rem;
-  color: #0F0F10;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin: 0;
+    @include typo-body(1rem, $color-black);
+    margin: 0;
 }
 
 .typo-body-bold-16 {
-  font-family: "Post No Bills Colombo Bold", "Helvetica", sans-serif;
-  font-size: 1rem;
-  color: #0F0F10;
-  font-style: normal;
-  line-height: normal;
-  margin: 0;
+    @include typo-body-bold(1rem, $color-black);
+    margin: 0;
 }
 
 .typo-body-18 {
-  font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
-  font-size: 1.125rem;
-  color: #0F0F10;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin: 0;
+    @include typo-body(1.125rem, $color-black);
+    margin: 0;
 }
 
 .typo-btn-16 {
-  font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
-  font-size: 1rem;
-  color: #FFFFFF;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin: 0;
-}
-
+    @include typo-body(1rem, $color-wight);
+    margin: 0;
+}*/
 /*                                     */
 /* ------- THE PROJECT BEGINNING  ---- */
 /*                                     */
@@ -233,12 +290,6 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
   margin: 0 1rem;
   overflow: hidden;
   text-decoration: none;
-  font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
-  font-size: 14px;
-  color: #09035D;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .menu-button-container {
@@ -302,7 +353,6 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 3.125rem;
     left: 0;
     flex-direction: column;
     width: 100%;
@@ -320,12 +370,6 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
     border: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     text-decoration: none;
-    font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
-    font-size: 18px;
-    color: #FFFFFF;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
   }
   #menu-toggle:checked ~ .menu a {
     border: none;

@@ -1,0 +1,44 @@
+.pack {
+    padding-bottom: 3.75rem;
+
+    &__padding {
+        padding-left: 1.25rem;
+    }
+
+    &__img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3.1rem;
+    }
+
+    &__text {
+        color: $color-black;
+        font-family: $font-body;
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0;
+        padding-bottom: 3.75rem;
+    }
+
+    &__left {
+        padding-top: 10.125rem;
+        display: flex;
+        flex-direction: column;
+        gap: 11.25rem;
+    }
+
+    &__right {
+        padding-top: 4.125rem;
+        display: flex;
+        flex-direction: column;
+        gap: 11.25rem;
+    }
+
+    &__paggingfy {
+        padding-top: 1.6875rem;
+    }
+
+    &__cost {
+        padding-top: 4.875rem;
+    }
+}
