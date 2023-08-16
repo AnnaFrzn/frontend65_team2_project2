@@ -17,9 +17,18 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #fff;
 }
 
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 2.1vw;
+  }
+}
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 0.83vw;
+  }
+}
 /*-----  typo    -----*/
 /*-    Логика классов    
     typo-Тип шрифта-размер, 
@@ -33,56 +42,66 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
 .typo-title-60 {
   font-family: "SeoulHangang", sans-serif;
   margin: 0;
-  font-size: 60px;
+  font-size: 3.75rem;
   color: #9FDB3D;
   font-style: normal;
   font-weight: 400;
-  line-height: 44px;
+  line-height: 2.75rem;
 }
 
 .typo-title-42 {
   font-family: "SeoulHangang", sans-serif;
   margin: 0;
-  font-size: 42px;
+  font-size: 2.625px;
   color: #09035D;
   font-style: normal;
   font-weight: 400;
-  line-height: 44px;
+  line-height: 2.75rem;
 }
 
 .typo-title-36 {
   font-family: "SeoulHangang", sans-serif;
   margin: 0;
-  font-size: 36px;
+  font-size: 2.25rem;
   color: #09035D;
   font-style: normal;
   font-weight: 400;
-  line-height: 44px;
+  line-height: 2.75rem;
 }
 
 .typo-title-30 {
   font-family: "SeoulHangang", sans-serif;
   margin: 0;
-  font-size: 30px;
+  font-size: 1.875rem;
   color: #09035D;
   font-style: normal;
   font-weight: 400;
-  line-height: 44px;
+  line-height: 2.75rem;
+}
+
+.typo-title-32 {
+  font-family: "SeoulHangang", sans-serif;
+  margin: 0;
+  font-size: 2rem;
+  color: #0F0F10;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.75rem;
 }
 
 .typo-title-28 {
   font-family: "SeoulHangang", sans-serif;
   margin: 0;
-  font-size: 28px;
+  font-size: 1.75rem;
   color: #09035D;
   font-style: normal;
   font-weight: 400;
-  line-height: 44px;
+  line-height: 2.75rem;
 }
 
 .typo-subtitle-24 {
   font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #09035D;
   font-style: normal;
   font-weight: 400;
@@ -91,16 +110,27 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
 
 .typo-subtitle-20 {
   font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #9FDB3D;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
+.typo-text-20 {
+  font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
+  font-size: 1.25rem;
+  color: #09035D;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding-bottom: 0.625rem;
+}
+
 .typo-subtitle-bold-18 {
   font-family: "Post No Bills Colombo Bold", "Helvetica", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #7871DE;
   font-style: normal;
   line-height: normal;
@@ -108,15 +138,16 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
 
 .typo-subtitle-bold-16 {
   font-family: "Post No Bills Colombo Bold", "Helvetica", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   color: #7871DE;
   font-style: normal;
   line-height: normal;
+  margin: 0;
 }
 
 .typo-body-14 {
   font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #0F0F10;
   font-style: normal;
   font-weight: 400;
@@ -126,7 +157,7 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
 
 .typo-body-16 {
   font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   color: #0F0F10;
   font-style: normal;
   font-weight: 400;
@@ -136,7 +167,7 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
 
 .typo-body-bold-16 {
   font-family: "Post No Bills Colombo Bold", "Helvetica", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   color: #0F0F10;
   font-style: normal;
   line-height: normal;
@@ -145,7 +176,7 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
 
 .typo-body-18 {
   font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #0F0F10;
   font-style: normal;
   font-weight: 400;
@@ -155,7 +186,7 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
 
 .typo-btn-16 {
   font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   color: #FFFFFF;
   font-style: normal;
   font-weight: 400;
@@ -314,4 +345,87 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
   .menu > a:hover {
     color: #09035D;
   }
+}
+.statistic {
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+  gap: 1.25rem;
+  padding: 3.75rem 1.25rem;
+  text-align: center;
+}
+.statistic__width {
+  width: 8.7rem;
+  justify-self: center;
+}
+
+@media screen and (min-width: 1600px) {
+  .statistic {
+    display: flex;
+    gap: 1.875rem;
+    padding: 5.625rem 34.9375rem 5rem;
+  }
+  .statistic__width {
+    width: 11.125rem;
+  }
+}
+.reason {
+  padding: 0rem 1.25rem 3.75rem;
+}
+.reason__blocks {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr/1fr 1fr;
+  gap: 1.25rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+.reason__block {
+  border-radius: 0.25rem;
+  box-shadow: 0.25rem 0.25rem 1.25rem 0 rgba(120, 113, 222, 0.1), -0.25rem -0.25rem 1.25rem 0 rgba(120, 113, 222, 0.1);
+  padding: 1.25rem;
+}
+.reason__img {
+  width: 4rem;
+  height: 4rem;
+  padding-bottom: 0.625rem;
+}
+.reason__text {
+  padding: 0 0.6rem 0 0.6rem;
+}
+
+.pack {
+  padding-bottom: 3.75rem;
+}
+.pack__padding {
+  padding-left: 1.25rem;
+}
+.pack__img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.1rem;
+}
+.pack__text {
+  color: #0F0F10;
+  font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 3.75rem;
+}
+.pack__left {
+  padding-top: 10.125rem;
+  display: flex;
+  flex-direction: column;
+  gap: 11.25rem;
+}
+.pack__right {
+  padding-top: 4.125rem;
+  display: flex;
+  flex-direction: column;
+  gap: 11.25rem;
+}
+.pack__paggingfy {
+  padding-top: 1.6875rem;
+}
+.pack__cost {
+  padding-top: 4.875rem;
 }/*# sourceMappingURL=style.css.map */

@@ -16,3 +16,8 @@
     align-items: center;
     justify-content: space-between;
 }
+
+@mixin borderShadow {
+    border-radius: 0.25rem;
+    box-shadow: 0.25rem 0.25rem 1.25rem 0 rgba(120, 113, 222, 0.10), -0.25rem -0.25rem 1.25rem 0 rgba(120, 113, 222, 0.10);
+}
