@@ -635,4 +635,120 @@ input:placeholder-shown {
 }
 .trajectory__typo-title-60 {
   margin: 1.25rem 0 0.625rem 0;
+
+}
+
+.text-violet {
+  color: #7871DE;
+}
+
+.w-600 {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+  .advant {
+    padding: 0rem 1.25rem 3.75rem;
+  }
+  .advant p {
+    margin-bottom: 10px;
+  }
+  .advant__main-title {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  .advant__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: 4px 4px 20px 0px rgba(120, 113, 222, 0.1), -4px -4px 20px 0px rgba(120, 113, 222, 0.1);
+    border-radius: 4px;
+    padding: 30px;
+    margin-bottom: 10px;
+  }
+  .advant__title {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1020px) {
+  .advant {
+    padding: 0rem 1.25rem 3.75rem;
+  }
+  .advant p {
+    margin-bottom: 10px;
+  }
+  .advant__main-title {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  .advant__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 38.625rem;
+  }
+  .advant__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: 4px 4px 20px 0px rgba(120, 113, 222, 0.1), -4px -4px 20px 0px rgba(120, 113, 222, 0.1);
+    border-radius: 4px;
+    padding: 30px;
+    margin-bottom: 10px;
+    width: 48%;
+  }
+  .advant__title {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1021px) {
+  .advant {
+    padding: 0rem 1.25rem 3.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .advant p {
+    margin-bottom: 10px;
+  }
+  .advant__main-title {
+    margin-top: 80px;
+    margin-bottom: 70px;
+    align-self: center;
+    width: 1218px;
+  }
+  .advant__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 1218px;
+  }
+  .advant__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 386px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 4px 4px 20px 0px rgba(120, 113, 222, 0.1), -4px -4px 20px 0px rgba(120, 113, 222, 0.1);
+    padding: 30px;
+  }
+  .advant__box_small1 {
+    height: 422px;
+    order: 1;
+  }
+  .advant__box_small2 {
+    height: 422px;
+    order: 3;
+  }
+  .advant__box_big {
+    height: 479px;
+    order: 2;
+  }
+
 }/*# sourceMappingURL=style.css.map */
