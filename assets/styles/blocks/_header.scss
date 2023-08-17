@@ -4,25 +4,23 @@
     padding: 20px;
     background-color: $color-violet;
 
-}
+    &__logo {
+        width: 112px;
+        height: 32px;
+    }
 
-.header__logo {
-    width: 112px;
-    height: 32px;
-}
-
-.header__social {
-    @include center;
+    &__social {
+        @include center;
+    }
 }
 
 /*------ MENU  -------*/
 .menu {
     display: flex;
     list-style-type: none;
-    margin: 0;
+    margin: 20px;
     padding: 0;
     flex-wrap: nowrap;
-
 }
 
 .menu>a {
