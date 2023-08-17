@@ -399,15 +399,25 @@
         </section>
 
         <!------------   FORM  ------------->
-        <form>
-            <input type="text" placeholder="Ваше имя" /><br />
-            <input type="tel" placeholder="+7 (000) 000-00-00"
-                pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" minlength="11"
-                maxlength="12" />
-            <input type="checkbox" />
-            <span class="typo-agree-answer">Соглашаюсь с условиями обработки данных</span>
-            <button class="typo-textbtntypo-textbtn">Стать учителем четвероного друга</button>
-        </form>
+        <section class="form-action">
+            <form class="form">
+              <input class="form__input typo-textbtn" type="text" placeholder="Введите имя" required />
+              <input class="form__input typo-textbtn" type="email" placeholder="Ваша почта" required />
+              <div class="form__acception">
+                <input class="form__checkbox" type="checkbox" />
+                <p class="typo-agree-answer form__acception--text-white">
+                  Соглашаюсь с
+                  <a class="form__acception--link" href="#">условиями</a><br />
+                  обработки данных
+                </p>
+              </div>
+      
+              <button class="button-form typo-textbtn">
+                Стать учителем четвероногого <br />
+                друга
+              </button>
+            </form>
+          </section>
 
         <!------------   FEEDBACK  ------------->
         <section>
@@ -473,13 +483,25 @@
         </section>
 
         <!------------   FORM  ------------->
-        <form>
-            <input type="text" placeholder="Введите имя" /><br />
-            <input type="email" placeholder="Ваша почта" />
-            <input type="checkbox" />
-            <span class="typo-agree-answer">Соглашаюсь с условиями обработки данных</span>
-            <button class="typo-textbtn">Стать учителем четвероного друга</button>
-        </form>
+        <section class="form-action">
+            <form class="form">
+              <input class="form__input typo-textbtn" type="text" placeholder="Введите имя" required />
+              <input class="form__input typo-textbtn" type="email" placeholder="Ваша почта" required />
+              <div class="form__acception">
+                <input class="form__checkbox" type="checkbox" />
+                <p class="typo-agree-answer form__acception--text-white">
+                  Соглашаюсь с
+                  <a class="form__acception--link" href="#">условиями</a><br />
+                  обработки данных
+                </p>
+              </div>
+      
+              <button class="button-form typo-textbtn">
+                Стать учителем четвероногого <br />
+                друга
+              </button>
+            </form>
+          </section>
 
         <!------------   FAQ  ------------->
         <section>
