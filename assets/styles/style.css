@@ -1,8 +1,4 @@
-@charset "UTF-8";
-/*------- colors  ------*/
-/* ---- mixins -----*/
-/*----- typo mixins -----*/
-/*--------- base -------*/
+/*------- colors  ------*/ /* ---- mixins -----*/ /*----- typo mixins -----*/ /*--------- base -------*/
 * {
   box-sizing: border-box;
 }
@@ -33,15 +29,7 @@ html {
   }
 }
 /*-----  typo    -----*/
-/*-    Логика классов    
-    typo-Тип шрифта-размер, 
-например,
-typo-title-60 - значит, что шрифт SeoulHangang и размер 60px, жирность обычная (400)
-
-.typo-subtitle-bold-18 
-шрифт Post No Bills Colombo, размер 18, жирный (600) 
-
-для параграфов body - .typo-body-16 (это тоже Post No Bills Colombo)--*/
+/* typo-body-18 */
 .typo-nav {
   font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
   font-style: normal;
@@ -52,6 +40,7 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
   color: #FFFFFF;
 }
 
+/* typo-title-36 */
 .typo-title {
   font-family: "SeoulHangang", sans-serif;
   margin: 0;
@@ -62,6 +51,7 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
   color: #09035D;
 }
 
+/* typo-body-18 */
 .typo-comment {
   font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
   font-style: normal;
@@ -71,6 +61,7 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
   font-size: 1.125rem;
 }
 
+/* typo-body-16 */
 .typo-textbtn {
   font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
   font-style: normal;
@@ -81,6 +72,7 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
   color: #FFFFFF;
 }
 
+/* typo-body-14 */
 .typo-agree-answer {
   font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
   font-style: normal;
@@ -90,6 +82,7 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
   font-size: 0.875rem;
 }
 
+/* typo-title-28 */
 .typo-countstat {
   font-family: "SeoulHangang", sans-serif;
   margin: 0;
@@ -100,6 +93,7 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
   color: #09035D;
 }
 
+/* typo-title-30 */
 .typo-blockname {
   font-family: "SeoulHangang", sans-serif;
   margin: 0;
@@ -110,6 +104,7 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
   color: #09035D;
 }
 
+/* typo-body-16 */
 .typo-info {
   font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
   font-style: normal;
@@ -119,6 +114,7 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
   font-size: 1rem;
 }
 
+/* typo-body-16-bold */
 .typo-info-bold {
   font-family: "Post No Bills Colombo Bold", "Helvetica", sans-serif;
   font-style: normal;
@@ -136,6 +132,7 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
   font-size: 1.25rem;
 }
 
+/* typo-body-24 */
 .typo-textadvant {
   font-family: "Post No Bills Colombo Regular", "Helvetica", sans-serif;
   font-style: normal;
@@ -146,6 +143,7 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
   font-size: 1.5rem;
 }
 
+/* typo-title-60 */
 .typo-countgreen {
   font-family: "SeoulHangang", sans-serif;
   margin: 0;
@@ -475,7 +473,8 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
 }
 .pack__cost {
   padding-top: 4.875rem;
-=======
+}
+
 .form-action {
   flex-direction: column;
   display: flex;
@@ -610,5 +609,4 @@ input:placeholder-shown {
 }
 .trajectory__typo-title-60 {
   margin: 1.25rem 0 0.625rem 0;
-
 }/*# sourceMappingURL=style.css.map */

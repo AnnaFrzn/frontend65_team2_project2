@@ -97,7 +97,7 @@
         flex-direction: column;
         width: 100%;
         @include center;
-        background-color: rgba(120, 113, 222, 0.80);
+        background-color: $color-LightSlateBlue-opacity80;
         backdrop-filter: blur(10px);
 
     }

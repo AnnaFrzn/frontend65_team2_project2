@@ -1,61 +1,55 @@
 /*-----  typo    -----*/
 
-
-/*-    Логика классов    
-    typo-Тип шрифта-размер, 
-например,
-typo-title-60 - значит, что шрифт SeoulHangang и размер 60px, жирность обычная (400)
-
-.typo-subtitle-bold-18 
-шрифт Post No Bills Colombo, размер 18, жирный (600) 
-
-для параграфов body - .typo-body-16 (это тоже Post No Bills Colombo)--*/
-
+/* typo-body-18 */
 .typo-nav {
     @include typo-body;
     font-size: 1.125rem;
     color: $color-wight;
 }
-
+/* typo-title-36 */
 .typo-title {
     @include typo-h;
     font-size: 2.25rem;
     color: $color-blue;
 }
 
+/* typo-body-18 */
 .typo-comment {
     @include typo-body;
     font-size: 1.125rem;
 }
-
+/* typo-body-16 */
 .typo-textbtn {
     @include typo-body;
     font-size: 1rem;
     color: $color-wight;
 }
-
+/* typo-body-14 */
 .typo-agree-answer {
     @include typo-body;
     font-size: 0.875rem;
 }
-
+/* typo-title-28 */
 .typo-countstat {
     @include typo-h;
     font-size: 1.75rem;
     color: $color-blue;
 }
 
+/* typo-title-30 */
 .typo-blockname {
     @include typo-h;
     font-size: 1.875rem;
     color: $color-blue;
 }
 
+/* typo-body-16 */
 .typo-info {
     @include typo-body;
     font-size: 1rem;
 }
 
+/* typo-body-16-bold */
 .typo-info-bold {
     @include typo-body-bold;
     font-size: 1rem;
@@ -65,13 +59,14 @@ typo-title-60 - значит, что шрифт SeoulHangang и размер 60p
     @include typo-body;
     font-size: 1.25rem;
 }
-
+/* typo-body-24 */
 .typo-textadvant {
     @include typo-body;
     color: $color-blue;
     font-size: 1.5rem;
 }
 
+/* typo-title-60 */
 .typo-countgreen {
     @include typo-h;
     color: $color-green;
