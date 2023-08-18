@@ -9,15 +9,16 @@
     <title>ДинМу</title>
 </head>
 
+
 <body>
-    <!------------   HEADER  ------------->
-    <header class="header">
-        <img src="assets/images/logo.png" alt="ДинМу" />
-        <input id="menu-toggle" type="checkbox" />
-        <label class="menu-button-container" for="menu-toggle">
-            <div class="menu-button"></div>
-        </label>
-        <!-- 
+  <!------------   HEADER  ------------->
+  <header class="header">
+    <img class="header__logo" src="assets/images/logo.png" alt="ДинМу" />
+    <input id="menu-toggle" type="checkbox" />
+    <label class="menu-button-container" for="menu-toggle">
+      <div class="menu-button"></div>
+    </label>
+    <!-- 
         <ul class="menu">
           <li>Причины дрессировки</li>
           <li>С кинологом лучше</li>
@@ -27,7 +28,6 @@
           <li>Чему обучю</li>
           <li>Частые вопросы</li>
         </ul>
-        -->
         <nav class="menu">
             <a class="typo-nav" href="#">Причины дрессировки</a>
             <a class="typo-nav" href="#">С кинологом лучше</a>
@@ -37,58 +37,68 @@
             <a class="typo-nav" href="#">Чему обучю</a>
             <a class="typo-nav" href="#FAQ">Частые вопросы</a>
 
-            <div class="header__social">
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
-                        fill="none">
-                        <rect width="30" height="30" rx="4" fill="$color-darkviolet" />
-                        <path
-                            d="M15 8.85542C16.988 8.85542 17.259 8.85542 18.0723 8.85542C18.7952 8.85542 19.1566 9.03614 19.4277 9.12651C19.7892 9.30723 20.0602 9.39759 20.3313 9.66868C20.6024 9.93976 20.7831 10.2108 20.8735 10.5723C20.9639 10.8434 21.0542 11.2048 21.1446 11.9277C21.1446 12.741 21.1446 12.9217 21.1446 15C21.1446 17.0783 21.1446 17.259 21.1446 18.0723C21.1446 18.7952 20.9639 19.1566 20.8735 19.4277C20.6928 19.7892 20.6024 20.0602 20.3313 20.3313C20.0602 20.6024 19.7892 20.7831 19.4277 20.8735C19.1566 20.9639 18.7952 21.0542 18.0723 21.1446C17.259 21.1446 17.0783 21.1446 15 21.1446C12.9217 21.1446 12.741 21.1446 11.9277 21.1446C11.2048 21.1446 10.8434 20.9639 10.5723 20.8735C10.2108 20.6928 9.93976 20.6024 9.66868 20.3313C9.39759 20.0602 9.21687 19.7892 9.12651 19.4277C9.03614 19.1566 8.94578 18.7952 8.85542 18.0723C8.85542 17.259 8.85542 17.0783 8.85542 15C8.85542 12.9217 8.85542 12.741 8.85542 11.9277C8.85542 11.2048 9.03614 10.8434 9.12651 10.5723C9.30723 10.2108 9.39759 9.93976 9.66868 9.66868C9.93976 9.39759 10.2108 9.21687 10.5723 9.12651C10.8434 9.03614 11.2048 8.94578 11.9277 8.85542C12.741 8.85542 13.012 8.85542 15 8.85542ZM15 7.5C12.9217 7.5 12.741 7.5 11.9277 7.5C11.1145 7.5 10.5723 7.68072 10.1205 7.86145C9.66868 8.04217 9.21687 8.31325 8.76506 8.76506C8.31325 9.21687 8.13253 9.57831 7.86145 10.1205C7.68072 10.5723 7.59036 11.1145 7.5 11.9277C7.5 12.741 7.5 13.012 7.5 15C7.5 17.0783 7.5 17.259 7.5 18.0723C7.5 18.8855 7.68072 19.4277 7.86145 19.8795C8.04217 20.3313 8.31325 20.7831 8.76506 21.2349C9.21687 21.6867 9.57831 21.8675 10.1205 22.1386C10.5723 22.3193 11.1145 22.4096 11.9277 22.5C12.741 22.5 13.012 22.5 15 22.5C16.988 22.5 17.259 22.5 18.0723 22.5C18.8855 22.5 19.4277 22.3193 19.8795 22.1386C20.3313 21.9578 20.7831 21.6867 21.2349 21.2349C21.6867 20.7831 21.8675 20.4217 22.1386 19.8795C22.3193 19.4277 22.4096 18.8855 22.5 18.0723C22.5 17.259 22.5 16.988 22.5 15C22.5 13.012 22.5 12.741 22.5 11.9277C22.5 11.1145 22.3193 10.5723 22.1386 10.1205C21.9578 9.66868 21.6867 9.21687 21.2349 8.76506C20.7831 8.31325 20.4217 8.13253 19.8795 7.86145C19.4277 7.68072 18.8855 7.59036 18.0723 7.5C17.259 7.5 17.0783 7.5 15 7.5Z"
-                            fill="white" />
-                        <path
-                            d="M15 11.1145C12.8313 11.1145 11.1145 12.8313 11.1145 15C11.1145 17.1687 12.8313 18.8855 15 18.8855C17.1687 18.8855 18.8855 17.1687 18.8855 15C18.8855 12.8313 17.1687 11.1145 15 11.1145ZM15 17.5301C13.6446 17.5301 12.4699 16.4458 12.4699 15C12.4699 13.6446 13.5542 12.4699 15 12.4699C16.3554 12.4699 17.5301 13.5542 17.5301 15C17.5301 16.3554 16.3554 17.5301 15 17.5301Z"
-                            fill="white" />
-                        <path
-                            d="M18.9759 11.9277C19.475 11.9277 19.8795 11.5231 19.8795 11.0241C19.8795 10.525 19.475 10.1205 18.9759 10.1205C18.4769 10.1205 18.0723 10.525 18.0723 11.0241C18.0723 11.5231 18.4769 11.9277 18.9759 11.9277Z"
-                            fill="white" />
-                    </svg>
-                </a>
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                        <rect width="30" height="30" rx="4" fill="$color-darkviolet" />
-                        <path
-                            d="M16.2428 15.2736H19.0344L19.4728 12.4204H16.2422V10.861C16.2422 9.67574 16.6272 8.62471 17.7292 8.62471H19.5V6.13481C19.1889 6.09254 18.5308 6 17.2875 6C14.6911 6 13.169 7.37947 13.169 10.5223V12.4204H10.5V15.2736H13.169V23.1158C13.6976 23.1957 14.233 23.25 14.7826 23.25C15.2793 23.25 15.7642 23.2043 16.2428 23.1392V15.2736Z"
-                            fill="white" />
-                    </svg>
-                </a>
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                        <rect width="30" height="30" rx="4" fill="$color-darkviolet" />
-                        <path
-                            d="M15.7369 20.25C10.0995 20.25 6.88398 16.3086 6.75 9.75H9.57386C9.66661 14.5638 11.7484 16.6029 13.3974 17.0233V9.75H16.0564V13.9017C17.6847 13.723 19.3955 11.8311 19.9727 9.75H22.6316C22.4142 10.8293 21.9806 11.8512 21.3582 12.7519C20.7358 13.6525 19.9378 14.4125 19.0142 14.9842C20.0452 15.5067 20.9557 16.2461 21.6859 17.1538C22.416 18.0615 22.9491 19.1168 23.25 20.25H20.3231C20.053 19.2657 19.504 18.3846 18.745 17.7171C17.986 17.0496 17.0507 16.6255 16.0564 16.4977V20.25H15.7369Z"
-                            fill="white" />
-                    </svg>
-                </a>
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                        <rect width="30" height="30" rx="4" fill="$color-darkviolet" />
-                        <path
-                            d="M21 9.45167L18.7459 21.2192C18.7459 21.2192 18.4306 22.0351 17.5642 21.6438L12.3634 17.5144L12.3393 17.5023C13.0418 16.849 18.4893 11.777 18.7274 11.5471C19.0959 11.191 18.8671 10.979 18.4392 11.248L10.3926 16.5397L7.28823 15.4581C7.28823 15.4581 6.79969 15.2781 6.75269 14.8868C6.70508 14.4949 7.30431 14.2829 7.30431 14.2829L19.9599 9.14171C19.9599 9.14171 21 8.66845 21 9.45167Z"
-                            fill="white" />
-                    </svg>
-                </a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <!------------   INTRO  ------------->
-        <section>
-            <h1 class="typo-title">
-                1 час занятий с любимцем, под руководством кинолога
+      <div class="header__social">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+            <rect width="30" height="30" rx="4" fill="#7871DE" />
+            <path
+              d="M15 8.85542C16.988 8.85542 17.259 8.85542 18.0723 8.85542C18.7952 8.85542 19.1566 9.03614 19.4277 9.12651C19.7892 9.30723 20.0602 9.39759 20.3313 9.66868C20.6024 9.93976 20.7831 10.2108 20.8735 10.5723C20.9639 10.8434 21.0542 11.2048 21.1446 11.9277C21.1446 12.741 21.1446 12.9217 21.1446 15C21.1446 17.0783 21.1446 17.259 21.1446 18.0723C21.1446 18.7952 20.9639 19.1566 20.8735 19.4277C20.6928 19.7892 20.6024 20.0602 20.3313 20.3313C20.0602 20.6024 19.7892 20.7831 19.4277 20.8735C19.1566 20.9639 18.7952 21.0542 18.0723 21.1446C17.259 21.1446 17.0783 21.1446 15 21.1446C12.9217 21.1446 12.741 21.1446 11.9277 21.1446C11.2048 21.1446 10.8434 20.9639 10.5723 20.8735C10.2108 20.6928 9.93976 20.6024 9.66868 20.3313C9.39759 20.0602 9.21687 19.7892 9.12651 19.4277C9.03614 19.1566 8.94578 18.7952 8.85542 18.0723C8.85542 17.259 8.85542 17.0783 8.85542 15C8.85542 12.9217 8.85542 12.741 8.85542 11.9277C8.85542 11.2048 9.03614 10.8434 9.12651 10.5723C9.30723 10.2108 9.39759 9.93976 9.66868 9.66868C9.93976 9.39759 10.2108 9.21687 10.5723 9.12651C10.8434 9.03614 11.2048 8.94578 11.9277 8.85542C12.741 8.85542 13.012 8.85542 15 8.85542ZM15 7.5C12.9217 7.5 12.741 7.5 11.9277 7.5C11.1145 7.5 10.5723 7.68072 10.1205 7.86145C9.66868 8.04217 9.21687 8.31325 8.76506 8.76506C8.31325 9.21687 8.13253 9.57831 7.86145 10.1205C7.68072 10.5723 7.59036 11.1145 7.5 11.9277C7.5 12.741 7.5 13.012 7.5 15C7.5 17.0783 7.5 17.259 7.5 18.0723C7.5 18.8855 7.68072 19.4277 7.86145 19.8795C8.04217 20.3313 8.31325 20.7831 8.76506 21.2349C9.21687 21.6867 9.57831 21.8675 10.1205 22.1386C10.5723 22.3193 11.1145 22.4096 11.9277 22.5C12.741 22.5 13.012 22.5 15 22.5C16.988 22.5 17.259 22.5 18.0723 22.5C18.8855 22.5 19.4277 22.3193 19.8795 22.1386C20.3313 21.9578 20.7831 21.6867 21.2349 21.2349C21.6867 20.7831 21.8675 20.4217 22.1386 19.8795C22.3193 19.4277 22.4096 18.8855 22.5 18.0723C22.5 17.259 22.5 16.988 22.5 15C22.5 13.012 22.5 12.741 22.5 11.9277C22.5 11.1145 22.3193 10.5723 22.1386 10.1205C21.9578 9.66868 21.6867 9.21687 21.2349 8.76506C20.7831 8.31325 20.4217 8.13253 19.8795 7.86145C19.4277 7.68072 18.8855 7.59036 18.0723 7.5C17.259 7.5 17.0783 7.5 15 7.5Z"
+              fill="white" />
+            <path
+              d="M15 11.1145C12.8313 11.1145 11.1145 12.8313 11.1145 15C11.1145 17.1687 12.8313 18.8855 15 18.8855C17.1687 18.8855 18.8855 17.1687 18.8855 15C18.8855 12.8313 17.1687 11.1145 15 11.1145ZM15 17.5301C13.6446 17.5301 12.4699 16.4458 12.4699 15C12.4699 13.6446 13.5542 12.4699 15 12.4699C16.3554 12.4699 17.5301 13.5542 17.5301 15C17.5301 16.3554 16.3554 17.5301 15 17.5301Z"
+              fill="white" />
+            <path
+              d="M18.9759 11.9277C19.475 11.9277 19.8795 11.5231 19.8795 11.0241C19.8795 10.525 19.475 10.1205 18.9759 10.1205C18.4769 10.1205 18.0723 10.525 18.0723 11.0241C18.0723 11.5231 18.4769 11.9277 18.9759 11.9277Z"
+              fill="white" />
+          </svg>
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+            <rect width="30" height="30" rx="4" fill="#7871DE" />
+            <path
+              d="M16.2428 15.2736H19.0344L19.4728 12.4204H16.2422V10.861C16.2422 9.67574 16.6272 8.62471 17.7292 8.62471H19.5V6.13481C19.1889 6.09254 18.5308 6 17.2875 6C14.6911 6 13.169 7.37947 13.169 10.5223V12.4204H10.5V15.2736H13.169V23.1158C13.6976 23.1957 14.233 23.25 14.7826 23.25C15.2793 23.25 15.7642 23.2043 16.2428 23.1392V15.2736Z"
+              fill="white" />
+          </svg>
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+            <rect width="30" height="30" rx="4" fill="#7871DE" />
+            <path
+              d="M15.7369 20.25C10.0995 20.25 6.88398 16.3086 6.75 9.75H9.57386C9.66661 14.5638 11.7484 16.6029 13.3974 17.0233V9.75H16.0564V13.9017C17.6847 13.723 19.3955 11.8311 19.9727 9.75H22.6316C22.4142 10.8293 21.9806 11.8512 21.3582 12.7519C20.7358 13.6525 19.9378 14.4125 19.0142 14.9842C20.0452 15.5067 20.9557 16.2461 21.6859 17.1538C22.416 18.0615 22.9491 19.1168 23.25 20.25H20.3231C20.053 19.2657 19.504 18.3846 18.745 17.7171C17.986 17.0496 17.0507 16.6255 16.0564 16.4977V20.25H15.7369Z"
+              fill="white" />
+          </svg>
+        </a>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+            <rect width="30" height="30" rx="4" fill="#7871DE" />
+            <path
+              d="M21 9.45167L18.7459 21.2192C18.7459 21.2192 18.4306 22.0351 17.5642 21.6438L12.3634 17.5144L12.3393 17.5023C13.0418 16.849 18.4893 11.777 18.7274 11.5471C19.0959 11.191 18.8671 10.979 18.4392 11.248L10.3926 16.5397L7.28823 15.4581C7.28823 15.4581 6.79969 15.2781 6.75269 14.8868C6.70508 14.4949 7.30431 14.2829 7.30431 14.2829L19.9599 9.14171C19.9599 9.14171 21 8.66845 21 9.45167Z"
+              fill="white" />
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!------------   INTRO  ------------->
+    <section class="intro">
+      <div class="intro__title">
+        <div class="intro__block">
+          <div class="intro__block-item">
+            <img class="intro__item-img" src="assets/images/intro.png" alt="">
+          </div>
+          <div class="intro__block-item">
+            <h1 class="typo-title intro__typo-title">
+              <span class="intro__h1">1 час</span> занятий с любимцем, под руководством кинолога
             </h1>
-            <p class="typo-comment">Сохранят нервные клетки и порядок в доме</p>
-            <button>Стать учителем четвероного друга</button>
-        </section>
-        <!------------   STATISTIC  ------------->
+            <p class="typo-comment intro__typo-comment">Сохранят нервные клетки и порядок в доме</p>
+            <button class="intro__btn">
+              <p class="typo-textbtn intro__btn__typo-textbtn">Стать учителем четвероного <br> друга</p>
+            </button>
+          </div>
+        </div>
+    </section>
+      <!------------   STATISTIC  ------------->
         <section class="statistic">
             <div class="statistic__width">
                 <h2 class="typo-countstat">100 людей</h2>
@@ -300,163 +310,160 @@
                 </div>
             </div>
         </section>
-        <section>
-            <h2 class="typo-blockname" style="color: white;">С кинологом лучше</h2>
-            <div>
-                <div>
-                    <h3 class="typo-text-20px">Опыт работы</h3>
-                    <p class="typo-info">
-                        Благодаря многолетнему опыту кинологи легко могут заметить
-                        недостаточно чёткие жесты, противоречивые команды
-                        или несвоевременное подкрепление. Так же вы не окажитесь в тупике,
-                        не зная, как разрешить ту или иную ситуацию. Профессионал
-                        подскажет простой выход из неё.
-                    </p>
-                </div>
-                <div>
-                    <h3 class="typo-text-20px">Экономия времени</h3>
-                    <p class="typo-info">
-                        На поиски нужной информации не уходят недели. 1 час занятий
-                        и команда лежать уже выучена.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="advant">
-            <h2 class="typo-blockname advant__main-title">Почему я</h2>
-            <div class="advant__container">
-                <div class="advant__box advant__box_small1">
-                    <h3 class="typo-textadvant advant__title">Обучаю всех</h3>
-                    <p class="typo-info-bold text-violet w-600">Обучаю владельцев, и их питомцев</p>
-                    <p class="typo-info">
-                        Возраст владельцев не важен. Щенков приучать начинаю с 4 месяцев
-                    </p>
-                </div>
+    
+    <!------------   FORWHAT  ------------->
+    <section class="forwhat">
+      <div class="forwhat__title">
+        <h2 class="typo-blockname forwhat__typo-blockname">С кинологом лучше</h2>
+        <div class="forwhat__textcols">
+          <div class="forwhat__textcols-item">
+            <h3 class="typo-text-20px forwhat__typo-text-20px">Опыт работы</h3>
+            <p class="typo-info forwhat__typo-info">
+              Благодаря многолетнему опыту кинологи легко могут заметить
+              недостаточно чёткие жесты, противоречивые команды
+              или несвоевременное подкрепление. Так же вы не окажитесь в тупике,
+              не зная, как разрешить ту или иную ситуацию. Профессионал
+              подскажет простой выход из неё.
+            </p>
+          </div>
+          <div class="forwhat__textcols-item">
+            <h3 class="typo-text-20px forwhat__typo-text-20px">Экономия времени</h3>
+            <p class="typo-info forwhat__typo-info">
+              На поиски нужной информации не уходят недели. 1 час занятий
+              и команда лежать уже выучена.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                <div class="advant__box advant__box_small2">
-                    <h3 class="typo-textadvant advant__title">Опыт работы</h3>
-                    <div class="advant__text">
-                        <p class="typo-info">
-                            <span class="typo-title-18 text-violet">200</span> дрессированных собак, получивших <span
-                                class="typo-title-18 text-violet">350</span>
-                            наград на разных
-                            соревнованиях
-                        </p>
-                        <p class="typo-info">
-                            <span class="typo-title-18 text-violet">100</span> людей научились правильно дрессировать и
-                            общаться со своими
-                            питомцами
-                        </p>
-                        <p class="typo-info"><span class="typo-title-18 text-violet">2600</span> часов совместных
-                            занятий и встреч
-                        </p>
-                    </div>
-                </div>
-                <div class="advant__box advant__box_big">
-                    <h3 class="typo-textadvant advant__title">К каждой собаке свой подход</h3>
-                    <div class="advant__text">
-                        <p class="typo-info-bold text-violet w-600">Узнаю сколько питомцу</p>
-                        <p class="typo-info-bold text-violet w-600">Был ли опыт в дрессировке</p>
-                        <p class="typo-info">
-                            Если был, то я обязательно должна знать как обучали. Так я пойму
-                            его условные рефлексы, и какие команды питомец уже знает, какие
-                            стоит обучить или даже заново пройти и зафиксировать результат.
-                            Если опыта не было я составляю список команд из ваших пожеланий и
-                            причин.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!------------   ADVANTAGES  ------------->
+    <section class="advant">
+      <h2 class="typo-blockname advant__main-title">Почему я</h2>
+      <div class="advant__container">
+        <div class="advant__box advant__box_small1">
+          <h3 class="typo-textadvant advant__title">Обучаю всех</h3>
+          <p class="typo-info-bold text-violet w-600">Обучаю владельцев, и их питомцев</p>
+          <p class="typo-info">
+            Возраст владельцев не важен. Щенков приучать начинаю с 4 месяцев
+          </p>
+        </div>
 
-        <!------------   TRAJECTORY  ------------->
-        <section>
-            <h2 class="typo-blockname">Этапы дрессировки</h2>
-            <div>
-                <div>
-                    <h4 class="typo-countgreen">01</h4>
-                    <p class="typo-info">Общение онлайн или по телефону</p>
-                </div>
-                <div>
-                    <h4 class="typo-countgreen">02</h4>
-                    <p class="typo-info">Разговариваем про собаку</p>
-                </div>
-                <div>
-                    <h4 class="typo-countgreen">03</h4>
-                    <p class="typo-info">Узнаю причины обращения</p>
-                </div>
-                <div>
-                    <h4 class="typo-countgreen">04</h4>
-                    <p class="typo-info">Узнаю удобное время занятий</p>
-                </div>
-                <div>
-                    <h4 class="typo-countgreen">05</h4>
-                    <p class="typo-info">Создаю график занятий</p>
-                </div>
-                <div>
-                    <h4 class="typo-countgreen">06</h4>
-                    <p class="typo-info">Направляю всю информацию, с которой нужно ознакомиться</p>
-                </div>
-                <div>
-                    <h4 class="typo-countgreen">07</h4>
-                    <p class="typo-info">Знакомство с собакой</p>
-                </div>
-                <div>
-                    <h4 class="typo-countgreen">08</h4>
-                    <p class="typo-info">Обучение командам</p>
-                </div>
-            </div>
-        </section>
+        <div class="advant__box advant__box_small2">
+          <h3 class="typo-textadvant advant__title">Опыт работы</h3>
+          <div class="advant__text">
+            <p class="typo-info">
+              <span class="typo-title-18 text-violet">200</span> дрессированных собак, получивших <span
+                class="typo-title-18 text-violet">350</span>
+              наград на разных
+              соревнованиях
+            </p>
+            <p class="typo-info">
+              <span class="typo-title-18 text-violet">100</span> людей научились правильно дрессировать и
+              общаться со своими
+              питомцами
+            </p>
+            <p class="typo-info"><span class="typo-title-18 text-violet">2600</span> часов совместных занятий и встреч
+            </p>
+          </div>
+        </div>
+        <div class="advant__box advant__box_big">
+          <h3 class="typo-textadvant advant__title">К каждой собаке свой подход</h3>
+          <div class="advant__text">
+            <p class="typo-info-bold text-violet w-600">Узнаю сколько питомцу</p>
+            <p class="typo-info-bold text-violet w-600">Был ли опыт в дрессировке</p>
+            <p class="typo-info">
+              Если был, то я обязательно должна знать как обучали. Так я пойму
+              его условные рефлексы, и какие команды питомец уже знает, какие
+              стоит обучить или даже заново пройти и зафиксировать результат.
+              Если опыта не было я составляю список команд из ваших пожеланий и
+              причин.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------   TRAGECTORY  ------------->
+    <section class="trajectory">
+      <h2 class="typo-blockname trajectory__typo-blockname">Этапы дрессировки</h2>
+      <div class="trajectory__title">
+        <div class="trajectory__grid">
+          <div class="trajectory__grid-item">
+            <h4 class="typo-countgreen trajectory__typo-countgreen">01</h4>
+            <p class="typo-info trajectory__typo-info">Созван по телефону или общение онлайн</p>
+          </div>
+          <div class="trajectory__grid-item">
+            <h4 class="typo-countgreen trajectory__typo-countgreen">02</h4>
+            <p class="typo-info trajectory__typo-info">Разговариваем про собаку</p>
+          </div>
+          <div class="trajectory__grid-item">
+            <h4 class="typo-countgreen trajectory__typo-countgreen">03</h4>
+            <p class="typo-info trajectory__typo-info">Узнаю причины обращения</p>
+          </div>
+          <div class="trajectory__grid-item">
+            <h4 class="typo-countgreen trajectory__typo-countgreen">04</h4>
+            <p class="typo-info trajectory__typo-info">Узнаю удобное время занятий</p>
+          </div>
 
-        <!------------   FORM  ------------->
-        <section class="form-action">
-            <form class="form">
-                <input class="form__input typo-textbtn" type="text" placeholder="Введите имя" required />
-                <input class="form__input typo-textbtn" type="email" placeholder="Ваша почта" required />
-                <div class="form__acception">
-                    <input class="form__checkbox" type="checkbox" />
-                    <p class="typo-agree-answer form__acception--text-white">
-                        Соглашаюсь с
-                        <a class="form__acception--link" href="#">условиями</a><br />
-                        обработки данных
-                    </p>
-                </div>
+          <div class="trajectory__grid-item">
+            <h4 class="typo-countgreen trajectory__typo-countgreen">05</h4>
+            <p class="typo-info trajectory__typo-info">Создаю график занятий</p>
+          </div>
+          <div class="trajectory__grid-item">
+            <h4 class="typo-countgreen trajectory__typo-countgreen">06</h4>
+            <p class="typo-info trajectory__typo-info">Скидываю всю информацию, с которой нужно ознакомиться
+            </p>
+          </div>
+          <div class="trajectory__grid-item">
+            <h4 class="typo-countgreen trajectory__typo-countgreen">07</h4>
+            <p class="typo-info trajectory__typo-info">Знакомство с собакой</p>
+          </div>
+          <div class="trajectory__grid-item">
+            <h4 class="typo-countgreen trajectory__typo-countgreen">08</h4>
+            <p class="typo-info trajectory__typo-info">Обучение командам</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------   FORM  ------------->
+    <form>
+      <input type="text" placeholder="Ваше имя" /><br />
+      <input type="tel" placeholder="+7 (000) 000-00-00"
+        pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" minlength="11" maxlength="12" />
+      <input type="checkbox" />
+      <span class="typo-agree-answer">Соглашаюсь с условиями обработки данных</span>
+      <button class="typo-textbtntypo-textbtn">Стать учителем четвероного друга</button>
+    </form>
 
-                <button class="button-form typo-textbtn">
-                    Стать учителем четвероногого <br />
-                    друга
-                </button>
-            </form>
-        </section>
-
-        <!------------   FEEDBACK  ------------->
-        <section>
-            <h2 class="typo-blockname">Отзывы</h2>
-            <div>
-                <p class="typo-comment">
-                    Я хочу сказать огромное спасибо вам! Вы были с нами в самый сложный
-                    момент и только благодаря вам мы смогли преодолеть все трудности.
-                </p>
-                <p class="typo-info-bold">Леонид Петрович</p>
-            </div>
-            <div>
-                <p class="typo-comment">
-                    Добрый день. Я хочу поделиться искренними эмоциями после занятий
-                    с моим любимым кинологом. Она учит понимать, и получать удовольствие
-                    от жизни с четвероногим другом. Спасибо вам ещё раз! Надеюсь,
-                    что дальше больше и мы с вами ещё много будем вместе радоваться
-                    успехам Мари, которых бы не было без вас! Она тот специалист,
-                    которого я искала несколько месяцев.
-                </p>
-                <p class="typo-info-bold">Инна Муравьёва</p>
-            </div>
-            <div>
-                <p class="typo-comment">Спасибо вам огромное</p>
-                <p class="typo-info-bold">Александр Н.</p>
-            </div>
-        </section>
-
-        <!------------   PACK  ------------->
+    <!------------   FEEDBACK  ------------->
+    <section class="feedback">
+      <h2 class="typo-blockname feedback__main-title">Отзывы</h2>
+      <div class="feedback__container">
+        <div class="feedback__box feedback__box_small1">
+          <p class="typo-comment feedback__text">
+            Я хочу сказать огромное спасибо вам! Вы были с нами в самый сложный
+            момент и только благодаря вам мы смогли преодолеть все трудности.
+          </p>
+          <p class="typo-info-bold  feedback__sign">Леонид Петрович</p>
+        </div>
+        <div class="feedback__box  feedback__box_small2">
+          <p class="typo-comment  feedback__text">Спасибо вам огромное</p>
+          <p class="typo-info-bold  feedback__sign">Александр Н.</p>
+        </div>
+        <div class="feedback__box feedback__box_big">
+          <p class="typo-comment feedback__text">
+            Добрый день. Я хочу поделиться искренними эмоциями после занятий
+            с моим любимым кинологом. Она учит понимать, и получать удовольствие
+            от жизни с четвероногим другом. Спасибо вам ещё раз! Надеюсь,
+            что дальше больше и мы с вами ещё много будем вместе радоваться
+            успехам Мари, которых бы не было без вас! Она тот специалист,
+            которого я искала несколько месяцев.
+          </p>
+          <p class="typo-info-bold feedback__sign">Инна Муравьёва</p>
+        </div>
+      </div>
+    </section>
+    <!------------   PACK  ------------->
         <section class="pack">
             <h2 class="typo-blockname  pack__padding">Чему обучю</h2>
             <h5 class="pack__text pack__padding">КОМАНДЫ</h5>
@@ -466,7 +473,6 @@
                     <p class="typo-text-20px pack__padding pack__textleft">«Трио: <span style="font-size: 1rem;">
                             сидеть, стоять,
                             лежать»</span></p>
-
                     <p class="typo-text-20px pack__padding pack__textleft">«ФАС»</p>
                 </div>
                 <div class="pack__right">
@@ -477,121 +483,118 @@
                 </div>
             </div>
         </section>
+    <!------------   FORM  ------------->
+    <section class="form-action">
+      <form class="form">
+        <input class="form__input typo-textbtn" type="text" placeholder="Введите имя" required />
+        <input class="form__input typo-textbtn" type="email" placeholder="Ваша почта" required />
+        <div class="form__acception">
+          <input class="form__checkbox" type="checkbox" />
+          <p class="typo-agree-answer form__acception--text-white">
+            Соглашаюсь с
+            <a class="form__acception--link" href="#">условиями</a><br />
+            обработки данных
+          </p>
+        </div>
 
-        <!------------   FORM  ------------->
-        <section class="form-action">
-            <form class="form">
-                <input class="form__input typo-textbtn" type="text" placeholder="Введите имя" required />
-                <input class="form__input typo-textbtn" type="email" placeholder="Ваша почта" required />
-                <div class="form__acception">
-                    <input class="form__checkbox" type="checkbox" />
-                    <p class="typo-agree-answer form__acception--text-white">
-                        Соглашаюсь с
-                        <a class="form__acception--link" href="#">условиями</a><br />
-                        обработки данных
-                    </p>
-                </div>
+        <button class="button-form typo-textbtn">
+          Стать учителем четвероногого <br />
+          друга
+        </button>
+      </form>
+    </section>
+    <!------------   FAQ  ------------->
+    <section>
+      <h2 class="typo-blockname" id="FAQ">Ответы на частые вопросы</h2>
+      <details>
+        <summary class="typo-text-20px">Можно ли онлайн обучить собаку?</summary>
+        <p class="typo-agree-answer">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          iusto pariatur suscipit eius vel, sed unde temporibus! Magni culpa
+          vel magnam fuga natus tempore sed accusantium? Possimus reiciendis
+          nobis voluptates?
+        </p>
+      </details>
+      <details>
+        <summary class="typo-text-20px">Как происходит оплата?</summary>
+        <p class="typo-agree-answer">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
+          repellendus itaque beatae asperiores cumque! Quisquam perspiciatis
+          vitae voluptas, recusandae laboriosam veniam. Ut natus saepe
+          consequuntur totam repellendus labore eveniet provident?
+        </p>
+      </details>
+      <details>
+        <summary class="typo-text-20px">Будет ли дальнейшее общение после занятий?</summary>
+        <p class="typo-agree-answer">
+          Да, будет. У меня есть чат. Там всё беседуют, задают друг другу
+          вопросы. Присылают как они занимаются или повторяют всё дома.
+        </p>
+      </details>
+      <details>
+        <summary class="typo-text-20px">Что если не получиться?</summary>
+        <p class="typo-agree-answer">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
+          aperiam necessitatibus eos, sint consequuntur quas error ad impedit
+          repudiandae magni velit tempora officiis minima mollitia quasi
+          laborum totam quae in.
+        </p>
+      </details>
+      <details>
+        <summary class="typo-text-20px">Что я получу в конце?</summary>
+        <p class="typo-agree-answer">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sequi
+          sunt minus. Explicabo natus dolores mollitia illo fugit doloribus,
+          omnis facilis necessitatibus molestias odit atque. Adipisci
+          repudiandae tenetur ipsam ipsum!
+        </p>
+      </details>
+    </section>
+  </main>
 
-                <button class="button-form typo-textbtn">
-                    Стать учителем четвероногого <br />
-                    друга
-                </button>
-            </form>
-        </section>
-
-        <!------------   FAQ  ------------->
-        <section>
-            <h2 class="typo-blockname" id="FAQ">Ответы на частые вопросы</h2>
-            <details>
-                <summary class="typo-text-20px">Можно ли онлайн обучить собаку?</summary>
-                <p class="typo-agree-answer">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-                    iusto pariatur suscipit eius vel, sed unde temporibus! Magni culpa
-                    vel magnam fuga natus tempore sed accusantium? Possimus reiciendis
-                    nobis voluptates?
-                </p>
-            </details>
-            <details>
-                <summary class="typo-text-20px">Как происходит оплата?</summary>
-                <p class="typo-agree-answer">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
-                    repellendus itaque beatae asperiores cumque! Quisquam perspiciatis
-                    vitae voluptas, recusandae laboriosam veniam. Ut natus saepe
-                    consequuntur totam repellendus labore eveniet provident?
-                </p>
-            </details>
-            <details>
-                <summary class="typo-text-20px">Будет ли дальнейшее общение после занятий?</summary>
-                <p class="typo-agree-answer">
-                    Да, будет. У меня есть чат. Там всё беседуют, задают друг другу
-                    вопросы. Присылают как они занимаются или повторяют всё дома.
-                </p>
-            </details>
-            <details>
-                <summary class="typo-text-20px">Что если не получиться?</summary>
-                <p class="typo-agree-answer">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
-                    aperiam necessitatibus eos, sint consequuntur quas error ad impedit
-                    repudiandae magni velit tempora officiis minima mollitia quasi
-                    laborum totam quae in.
-                </p>
-            </details>
-            <details>
-                <summary class="typo-text-20px">Что я получу в конце?</summary>
-                <p class="typo-agree-answer">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sequi
-                    sunt minus. Explicabo natus dolores mollitia illo fugit doloribus,
-                    omnis facilis necessitatibus molestias odit atque. Adipisci
-                    repudiandae tenetur ipsam ipsum!
-                </p>
-            </details>
-        </section>
-    </main>
-
-    <!------------   FOOTER  ------------->
-    <footer>
-        <img src="assets/images/logo.png" alt="ДинМу" />
-        <nav>
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                    <rect width="30" height="30" rx="4" fill="#7871DE" />
-                    <path
-                        d="M15 8.85542C16.988 8.85542 17.259 8.85542 18.0723 8.85542C18.7952 8.85542 19.1566 9.03614 19.4277 9.12651C19.7892 9.30723 20.0602 9.39759 20.3313 9.66868C20.6024 9.93976 20.7831 10.2108 20.8735 10.5723C20.9639 10.8434 21.0542 11.2048 21.1446 11.9277C21.1446 12.741 21.1446 12.9217 21.1446 15C21.1446 17.0783 21.1446 17.259 21.1446 18.0723C21.1446 18.7952 20.9639 19.1566 20.8735 19.4277C20.6928 19.7892 20.6024 20.0602 20.3313 20.3313C20.0602 20.6024 19.7892 20.7831 19.4277 20.8735C19.1566 20.9639 18.7952 21.0542 18.0723 21.1446C17.259 21.1446 17.0783 21.1446 15 21.1446C12.9217 21.1446 12.741 21.1446 11.9277 21.1446C11.2048 21.1446 10.8434 20.9639 10.5723 20.8735C10.2108 20.6928 9.93976 20.6024 9.66868 20.3313C9.39759 20.0602 9.21687 19.7892 9.12651 19.4277C9.03614 19.1566 8.94578 18.7952 8.85542 18.0723C8.85542 17.259 8.85542 17.0783 8.85542 15C8.85542 12.9217 8.85542 12.741 8.85542 11.9277C8.85542 11.2048 9.03614 10.8434 9.12651 10.5723C9.30723 10.2108 9.39759 9.93976 9.66868 9.66868C9.93976 9.39759 10.2108 9.21687 10.5723 9.12651C10.8434 9.03614 11.2048 8.94578 11.9277 8.85542C12.741 8.85542 13.012 8.85542 15 8.85542ZM15 7.5C12.9217 7.5 12.741 7.5 11.9277 7.5C11.1145 7.5 10.5723 7.68072 10.1205 7.86145C9.66868 8.04217 9.21687 8.31325 8.76506 8.76506C8.31325 9.21687 8.13253 9.57831 7.86145 10.1205C7.68072 10.5723 7.59036 11.1145 7.5 11.9277C7.5 12.741 7.5 13.012 7.5 15C7.5 17.0783 7.5 17.259 7.5 18.0723C7.5 18.8855 7.68072 19.4277 7.86145 19.8795C8.04217 20.3313 8.31325 20.7831 8.76506 21.2349C9.21687 21.6867 9.57831 21.8675 10.1205 22.1386C10.5723 22.3193 11.1145 22.4096 11.9277 22.5C12.741 22.5 13.012 22.5 15 22.5C16.988 22.5 17.259 22.5 18.0723 22.5C18.8855 22.5 19.4277 22.3193 19.8795 22.1386C20.3313 21.9578 20.7831 21.6867 21.2349 21.2349C21.6867 20.7831 21.8675 20.4217 22.1386 19.8795C22.3193 19.4277 22.4096 18.8855 22.5 18.0723C22.5 17.259 22.5 16.988 22.5 15C22.5 13.012 22.5 12.741 22.5 11.9277C22.5 11.1145 22.3193 10.5723 22.1386 10.1205C21.9578 9.66868 21.6867 9.21687 21.2349 8.76506C20.7831 8.31325 20.4217 8.13253 19.8795 7.86145C19.4277 7.68072 18.8855 7.59036 18.0723 7.5C17.259 7.5 17.0783 7.5 15 7.5Z"
-                        fill="white" />
-                    <path
-                        d="M15 11.1145C12.8313 11.1145 11.1145 12.8313 11.1145 15C11.1145 17.1687 12.8313 18.8855 15 18.8855C17.1687 18.8855 18.8855 17.1687 18.8855 15C18.8855 12.8313 17.1687 11.1145 15 11.1145ZM15 17.5301C13.6446 17.5301 12.4699 16.4458 12.4699 15C12.4699 13.6446 13.5542 12.4699 15 12.4699C16.3554 12.4699 17.5301 13.5542 17.5301 15C17.5301 16.3554 16.3554 17.5301 15 17.5301Z"
-                        fill="white" />
-                    <path
-                        d="M18.9759 11.9277C19.475 11.9277 19.8795 11.5231 19.8795 11.0241C19.8795 10.525 19.475 10.1205 18.9759 10.1205C18.4769 10.1205 18.0723 10.525 18.0723 11.0241C18.0723 11.5231 18.4769 11.9277 18.9759 11.9277Z"
-                        fill="white" />
-                </svg>
-            </a>
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                    <rect width="30" height="30" rx="4" fill="#7871DE" />
-                    <path
-                        d="M16.2428 15.2736H19.0344L19.4728 12.4204H16.2422V10.861C16.2422 9.67574 16.6272 8.62471 17.7292 8.62471H19.5V6.13481C19.1889 6.09254 18.5308 6 17.2875 6C14.6911 6 13.169 7.37947 13.169 10.5223V12.4204H10.5V15.2736H13.169V23.1158C13.6976 23.1957 14.233 23.25 14.7826 23.25C15.2793 23.25 15.7642 23.2043 16.2428 23.1392V15.2736Z"
-                        fill="white" />
-                </svg>
-            </a>
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                    <rect width="30" height="30" rx="4" fill="#7871DE" />
-                    <path
-                        d="M15.7369 20.25C10.0995 20.25 6.88398 16.3086 6.75 9.75H9.57386C9.66661 14.5638 11.7484 16.6029 13.3974 17.0233V9.75H16.0564V13.9017C17.6847 13.723 19.3955 11.8311 19.9727 9.75H22.6316C22.4142 10.8293 21.9806 11.8512 21.3582 12.7519C20.7358 13.6525 19.9378 14.4125 19.0142 14.9842C20.0452 15.5067 20.9557 16.2461 21.6859 17.1538C22.416 18.0615 22.9491 19.1168 23.25 20.25H20.3231C20.053 19.2657 19.504 18.3846 18.745 17.7171C17.986 17.0496 17.0507 16.6255 16.0564 16.4977V20.25H15.7369Z"
-                        fill="white" />
-                </svg>
-            </a>
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                    <rect width="30" height="30" rx="4" fill="#7871DE" />
-                    <path
-                        d="M21 9.45167L18.7459 21.2192C18.7459 21.2192 18.4306 22.0351 17.5642 21.6438L12.3634 17.5144L12.3393 17.5023C13.0418 16.849 18.4893 11.777 18.7274 11.5471C19.0959 11.191 18.8671 10.979 18.4392 11.248L10.3926 16.5397L7.28823 15.4581C7.28823 15.4581 6.79969 15.2781 6.75269 14.8868C6.70508 14.4949 7.30431 14.2829 7.30431 14.2829L19.9599 9.14171C19.9599 9.14171 21 8.66845 21 9.45167Z"
-                        fill="white" />
-                </svg>
-            </a>
-        </nav>
-        <div>&copy;2022 All rights reserved.</div>
-    </footer>
+  <footer class="footer">
+    <img class="footer__logo" src="assets/images/logo.png" alt="ДинМу" />
+    <div class="footer__copyright typo-copyright">&copy;2022 All rights reserved.</div>
+    <nav class="footer__social">
+      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 30" fill="none">
+          <rect width="30" height="30" rx="4" fill="#7871DE" />
+          <path
+            d="M15 8.85542C16.988 8.85542 17.259 8.85542 18.0723 8.85542C18.7952 8.85542 19.1566 9.03614 19.4277 9.12651C19.7892 9.30723 20.0602 9.39759 20.3313 9.66868C20.6024 9.93976 20.7831 10.2108 20.8735 10.5723C20.9639 10.8434 21.0542 11.2048 21.1446 11.9277C21.1446 12.741 21.1446 12.9217 21.1446 15C21.1446 17.0783 21.1446 17.259 21.1446 18.0723C21.1446 18.7952 20.9639 19.1566 20.8735 19.4277C20.6928 19.7892 20.6024 20.0602 20.3313 20.3313C20.0602 20.6024 19.7892 20.7831 19.4277 20.8735C19.1566 20.9639 18.7952 21.0542 18.0723 21.1446C17.259 21.1446 17.0783 21.1446 15 21.1446C12.9217 21.1446 12.741 21.1446 11.9277 21.1446C11.2048 21.1446 10.8434 20.9639 10.5723 20.8735C10.2108 20.6928 9.93976 20.6024 9.66868 20.3313C9.39759 20.0602 9.21687 19.7892 9.12651 19.4277C9.03614 19.1566 8.94578 18.7952 8.85542 18.0723C8.85542 17.259 8.85542 17.0783 8.85542 15C8.85542 12.9217 8.85542 12.741 8.85542 11.9277C8.85542 11.2048 9.03614 10.8434 9.12651 10.5723C9.30723 10.2108 9.39759 9.93976 9.66868 9.66868C9.93976 9.39759 10.2108 9.21687 10.5723 9.12651C10.8434 9.03614 11.2048 8.94578 11.9277 8.85542C12.741 8.85542 13.012 8.85542 15 8.85542ZM15 7.5C12.9217 7.5 12.741 7.5 11.9277 7.5C11.1145 7.5 10.5723 7.68072 10.1205 7.86145C9.66868 8.04217 9.21687 8.31325 8.76506 8.76506C8.31325 9.21687 8.13253 9.57831 7.86145 10.1205C7.68072 10.5723 7.59036 11.1145 7.5 11.9277C7.5 12.741 7.5 13.012 7.5 15C7.5 17.0783 7.5 17.259 7.5 18.0723C7.5 18.8855 7.68072 19.4277 7.86145 19.8795C8.04217 20.3313 8.31325 20.7831 8.76506 21.2349C9.21687 21.6867 9.57831 21.8675 10.1205 22.1386C10.5723 22.3193 11.1145 22.4096 11.9277 22.5C12.741 22.5 13.012 22.5 15 22.5C16.988 22.5 17.259 22.5 18.0723 22.5C18.8855 22.5 19.4277 22.3193 19.8795 22.1386C20.3313 21.9578 20.7831 21.6867 21.2349 21.2349C21.6867 20.7831 21.8675 20.4217 22.1386 19.8795C22.3193 19.4277 22.4096 18.8855 22.5 18.0723C22.5 17.259 22.5 16.988 22.5 15C22.5 13.012 22.5 12.741 22.5 11.9277C22.5 11.1145 22.3193 10.5723 22.1386 10.1205C21.9578 9.66868 21.6867 9.21687 21.2349 8.76506C20.7831 8.31325 20.4217 8.13253 19.8795 7.86145C19.4277 7.68072 18.8855 7.59036 18.0723 7.5C17.259 7.5 17.0783 7.5 15 7.5Z"
+            fill="white" />
+          <path
+            d="M15 11.1145C12.8313 11.1145 11.1145 12.8313 11.1145 15C11.1145 17.1687 12.8313 18.8855 15 18.8855C17.1687 18.8855 18.8855 17.1687 18.8855 15C18.8855 12.8313 17.1687 11.1145 15 11.1145ZM15 17.5301C13.6446 17.5301 12.4699 16.4458 12.4699 15C12.4699 13.6446 13.5542 12.4699 15 12.4699C16.3554 12.4699 17.5301 13.5542 17.5301 15C17.5301 16.3554 16.3554 17.5301 15 17.5301Z"
+            fill="white" />
+          <path
+            d="M18.9759 11.9277C19.475 11.9277 19.8795 11.5231 19.8795 11.0241C19.8795 10.525 19.475 10.1205 18.9759 10.1205C18.4769 10.1205 18.0723 10.525 18.0723 11.0241C18.0723 11.5231 18.4769 11.9277 18.9759 11.9277Z"
+            fill="white" />
+        </svg>
+      </a>
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 30" fill="none">
+          <rect width="30" height="30" rx="4" fill="#7871DE" />
+          <path
+            d="M16.2428 15.2736H19.0344L19.4728 12.4204H16.2422V10.861C16.2422 9.67574 16.6272 8.62471 17.7292 8.62471H19.5V6.13481C19.1889 6.09254 18.5308 6 17.2875 6C14.6911 6 13.169 7.37947 13.169 10.5223V12.4204H10.5V15.2736H13.169V23.1158C13.6976 23.1957 14.233 23.25 14.7826 23.25C15.2793 23.25 15.7642 23.2043 16.2428 23.1392V15.2736Z"
+            fill="white" />
+        </svg>
+      </a>
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 30" fill="none">
+          <rect width="30" height="30" rx="4" fill="#7871DE" />
+          <path
+            d="M15.7369 20.25C10.0995 20.25 6.88398 16.3086 6.75 9.75H9.57386C9.66661 14.5638 11.7484 16.6029 13.3974 17.0233V9.75H16.0564V13.9017C17.6847 13.723 19.3955 11.8311 19.9727 9.75H22.6316C22.4142 10.8293 21.9806 11.8512 21.3582 12.7519C20.7358 13.6525 19.9378 14.4125 19.0142 14.9842C20.0452 15.5067 20.9557 16.2461 21.6859 17.1538C22.416 18.0615 22.9491 19.1168 23.25 20.25H20.3231C20.053 19.2657 19.504 18.3846 18.745 17.7171C17.986 17.0496 17.0507 16.6255 16.0564 16.4977V20.25H15.7369Z"
+            fill="white" />
+        </svg>
+      </a>
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 30 30" fill="none">
+          <rect width="30" height="30" rx="4" fill="#7871DE" />
+          <path
+            d="M21 9.45167L18.7459 21.2192C18.7459 21.2192 18.4306 22.0351 17.5642 21.6438L12.3634 17.5144L12.3393 17.5023C13.0418 16.849 18.4893 11.777 18.7274 11.5471C19.0959 11.191 18.8671 10.979 18.4392 11.248L10.3926 16.5397L7.28823 15.4581C7.28823 15.4581 6.79969 15.2781 6.75269 14.8868C6.70508 14.4949 7.30431 14.2829 7.30431 14.2829L19.9599 9.14171C19.9599 9.14171 21 8.66845 21 9.45167Z"
+            fill="white" />
+        </svg>
+      </a>
+    </nav>
+  </footer>
 </body>
 
 </html>
