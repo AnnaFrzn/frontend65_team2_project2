@@ -1,27 +1,110 @@
-.forwhat{
+.forwhat {
     background-color: $color-darkviolet;
-    &__title{
+
+    &__title {
         margin: 0 1.25rem 0 1.25rem;
         padding: 3.75rem 0 3.75rem 0;
-        }
-        &__typo-title-30{
-            color: $color-wight;
-            margin-bottom: 2.5rem;
-        }
-        &__h3{
-            color: $color-green;
-            font-size: 20px;
-            margin-top: 1.25rem;
-        }
-        &__typo-body-16{
-            color: $color-wight;
-            width: 20rem;
-            margin-top: 0.625rem;
+    }
+
+    &__typo-blockname {
+        color: $color-wight;
+        margin-bottom: 2.5rem;
+    }
+
+    &__typo-text-20px {
+        color: $color-green;
+        margin-top: 1.25rem;
+    }
+
+    &__typo-info {
+        color: $color-wight;
+        margin-top: 0.625rem;
+    }
+
+    &__textcols-item {
+        width: 18rem;
+        /*width: 20rem;*/
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1000px) {
+        .forwhat {
+
+            &__title {
+                margin: 0 1.25rem 0 1.25rem;
+                padding: 5rem 0 5rem 0;
+            }
+
+            &__typo-blockname {
+                color: $color-wight;
+                margin-bottom: 2.5rem;
+            }
+
+            &__typo-text-20px {
+                color: $color-green;
+            }
+
+            &__typo-info {
+                color: $color-wight;
+                margin-top: 0.625rem;
+            }
+
+            &__textcols {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 1.25rem;
+            }
+
+            &__textcols-item {
+                /*width: 22.125rem;*/
+                width: 18rem;
+            }
         }
 
-        &__p{
-            color: $color-wight;
-            width: 20rem;
-            margin-top: 0.625rem;
+
+
+    }
+
+    @media screen and (min-width: 1000px) {
+        .forwhat {
+
+            &__title {
+                margin: 0 1.25rem 0 1.25rem;
+                padding: 3.3125rem 0 3.3125rem 0;
+            }
+
+            &__typo-blockname {
+                color: $color-wight;
+                margin: 0 0 2.5rem 21.9375rem;
+            }
+
+            &__typo-text-20px {
+                color: $color-green;
+                margin-top: 1.25rem;
+            }
+
+            &__typo-info {
+                color: $color-wight;
+                margin-top: 0.625rem;
+
+            }
+
+            &__textcols {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 1.25rem;
+            }
+
+            &__textcols-item {
+                width: 29.375rem;
+            }
+
+            &__textcols-item:nth-child(1) {
+                margin-left: auto;
+            }
         }
+
+
+
+    }
+
 }
