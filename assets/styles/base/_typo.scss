@@ -21,13 +21,13 @@
 /* typo-body-16 */
 .typo-textbtn {
     @include typo-body;
-    font-size: 1rem;
+    font-size: 16px;
     color: $color-wight;
 }
 /* typo-body-14 */
 .typo-agree-answer {
     @include typo-body;
-    font-size: 0.875rem;
+    font-size: 14px;
 }
 /* typo-title-28 */
 .typo-countstat {
@@ -55,6 +55,12 @@
     font-size: 1rem;
 }
 
+/* typo-body-12 */
+.typo-copyright {
+    @include typo-body;
+    font-size: 12px;
+    color: $color-blue;
+}
 .typo-text-20px {
     @include typo-body;
     font-size: 1.25rem;
@@ -93,6 +99,14 @@
     .typo-btn-agree {
         font-size: 1rem;
     }
+
+    .typo-agree-answer {
+        font-size: 16px;
+    }
+    .typo-copyright {
+        font-size: 14px;
+    }
+
 }
 
 @media screen and (min-width: 1600px) {
