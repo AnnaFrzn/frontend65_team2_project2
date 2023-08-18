@@ -1,8 +1,23 @@
 .pack {
     padding-bottom: 3.75rem;
 
+    &__text {
+        color: $color-black;
+        font-family: $font-body;
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0;
+        padding-top: 10.125rem;
+    }
+
     &__padding {
         padding-left: 1.25rem;
+    }
+
+    &__textleft {
+        color: $color-blue;
+        background: url(/assets/images/line_left.png) no-repeat;
+        background-position: bottom;
     }
 
     &__img {
@@ -11,34 +26,86 @@
         gap: 3.1rem;
     }
 
-    &__text {
-        color: $color-black;
-        font-family: $font-body;
-        font-size: 1rem;
-        font-weight: 600;
-        margin: 0;
-        padding-bottom: 3.75rem;
-    }
-
     &__left {
-        padding-top: 10.125rem;
+        padding-top: rem;
         display: flex;
         flex-direction: column;
         gap: 11.25rem;
     }
 
     &__right {
-        padding-top: 4.125rem;
         display: flex;
         flex-direction: column;
         gap: 11.25rem;
+    }
+
+    &__textright {
+        color: $color-blue;
+        background: url(/assets/images/line_right.png) no-repeat;
+        background-position: bottom;
     }
 
     &__paggingfy {
         padding-top: 1.6875rem;
     }
 
+
     &__cost {
-        padding-top: 4.875rem;
+        padding-top: 4.975rem;
+        @include typo-h;
+        font-size: 2rem;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .pack {
+        padding-bottom: 5rem;
+
+        &__text {
+            padding-top: 11.5rem;
+        }
+
+        &__padding {
+            padding-left: 0rem;
+        }
+
+        &__textleft {
+            color: $color-blue;
+            background: none;
+            background-position: bottom;
+        }
+
+        &__img {
+            display: grid;
+            grid-template: 1fr/1fr 1fr;
+            gap: 3.1rem;
+        }
+
+        &__left {
+            display: flex;
+            background: url(/assets/images/768_line.png) no-repeat;
+            gap: 2rem;
+        }
+
+        &__right {
+            background: url(/assets/images/768_lineright.png) no-repeat;
+            display: flex;
+            gap: 2rem;
+        }
+
+        &__textright {
+            background: none;
+        }
+
+        &__paggingfy {
+            padding-top: 1.6875rem;
+        }
+
+
+        &__cost {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {}
