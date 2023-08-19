@@ -90,7 +90,7 @@ $btn-width-desk: 286px;
     }
 }
 
-input:placeholder-shown {
+input::placeholder {
     color: $color-LightSlateBlue-opacity50;
 }
 .button-form {
