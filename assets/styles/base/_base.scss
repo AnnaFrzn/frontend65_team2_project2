@@ -11,6 +11,10 @@ html {
     font-size: 4.1vw;
 }
 
+a, button {
+    -webkit-tap-highlight-color: transparent;
+}
+
 .main {
     @include center;
     flex-direction: column;

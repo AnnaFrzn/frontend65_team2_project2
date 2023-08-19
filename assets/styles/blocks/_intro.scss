@@ -46,6 +46,7 @@
 
         &__item-img {
             margin: 2.5rem 0 1.25rem 0;
+            width: 100%;
         }
 
 
@@ -56,7 +57,7 @@
         }
 
         &__btn {
-            width: 20rem;
+            width: 100%;
             height: 4.375rem;
             background-color: $color-blue;
             color: $color-wight;
@@ -154,14 +155,13 @@
         &__block {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            height: 31.25rem;
             padding-bottom: 75px;
         }
 
         &__block-item:nth-child(1) {
             order: 2;
-            border-radius: 0px 0px 100px 0px;
-            background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+            border-radius: 0 0 100px 0;
+            background: lightgray 50% / cover no-repeat;
 
         }
 

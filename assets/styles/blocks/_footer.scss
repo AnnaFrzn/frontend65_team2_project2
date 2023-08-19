@@ -40,6 +40,11 @@
 
         &__social {
             align-self: center;
+            font-size: 1.25rem;
+
+            & > a {
+                display: block;
+            }
         }
 
         &__copyright {
